@@ -1,0 +1,22 @@
+.Column {
+}
+
+.ColumnEqual {
+  composes: flexSkrink1 flexGrow1 flexBasis0 from 'scrubs-traits/flexbox.css';
+}
+
+.ColumnCentered {
+  composes: center from 'scrubs-traits/typography.css';
+}
+
+.ColumnRight {
+  composes: flex flexRowReverse from 'scrubs-traits/flexbox.css';
+}
+
+.ColumnEqualCentered {
+  composes: ColumnEqual ColumnCentered;
+}
+
+.ColumnEqualRight {
+  composes: ColumnEqual ColumnRight;
+}

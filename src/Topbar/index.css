@@ -1,0 +1,10 @@
+.Topbar {
+  composes: bgGrey from 'scrubs-traits/colours.css';
+  composes: px3 pt3 from 'scrubs-traits/padding.css';
+  composes: bar from 'scrubs-traits/layout.css';
+}
+
+.TopbarFixed {
+  composes: Topbar;
+  composes: fixed top0 left0 right0 from 'scrubs-traits/position.css';
+}

@@ -1,5 +1,0 @@
-.Item {
-  composes: py2 from 'scrubs-traits/padding.css';
-  composes: borderTop from 'scrubs-traits/borders.css';
-  composes: borderGrey from 'scrubs-traits/colours.css';
-}

@@ -1,8 +1,0 @@
-.View {
-  composes: fillHeight from 'scrubs-traits/layout.css';
-}
-
-.ViewPadTop {
-  composes: View;
-  composes: ptBar from 'scrubs-traits/padding.css';
-}

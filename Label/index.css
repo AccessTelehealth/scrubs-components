@@ -1,4 +1,0 @@
-.Label {
-  composes: mb1 from 'scrubs-traits/margin.css';
-  composes: block from 'scrubs-traits/layout.css';
-}

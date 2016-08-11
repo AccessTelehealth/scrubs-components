@@ -1,0 +1,3 @@
+.Field {
+  composes: mb2 from 'scrubs-traits/margin.css';
+}
