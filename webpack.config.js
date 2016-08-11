@@ -5,11 +5,11 @@ module.exports = {
   devtool: 'cheap-module-eval-source-map',
   entry: [
     './src',
-    './docs'
   ],
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: 'index.js'
+    filename: 'index.js',
+    libraryTarget: 'commonjs2'
   },
   module: {
     loaders: [{
@@ -17,7 +17,7 @@ module.exports = {
       exclude: /node_modules/,
       loader: 'babel',
       query: {
-        'presets': ['react', 'es2015', 'stage-0', 'react-hmre',],
+        'presets': ['react', 'es2015', 'stage-0'],
       },
     }, {
       test: /\.css$/,
