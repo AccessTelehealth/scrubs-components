@@ -10,8 +10,8 @@
     "type": "git",
     "url": "git+https://github.com/dr-me/scrubs-components.git"
   },
-  "dependencies": {
-  "scrubs-tra": "github:dr-me/scrubs-tra"
+  "devDependencies": {
+    "scrubs-traits": "github:dr-me/scrubs-traits"
   },
   "author": "",
   "license": "ISC",
