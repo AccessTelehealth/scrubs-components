@@ -1,5 +1,7 @@
 /* @flow */
 
+import defaults from 'scrubs-traits/defaults.css'
+
 export { default as Avatar } from './Avatar'
 export { default as Action } from './Action'
 export { default as Back } from './Back'
