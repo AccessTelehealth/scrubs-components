@@ -4,13 +4,12 @@ var webpack = require('webpack')
 module.exports = {
   devtool: 'cheap-module-eval-source-map',
   entry: [
-    './src/index',
-    './src/docs'
+    './src',
+    './docs'
   ],
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: '[name].js',
-    libraryTarget: 'commonjs2'
+    filename: 'index.js'
   },
   module: {
     loaders: [{
@@ -27,12 +26,11 @@ module.exports = {
       test: /\.json$/,
       loader: 'json-loader',
     }, {
-      test: /\.svg$/,
-      loaders: ['react-svgdom', 'svgo',],
-    }, {
       test: /\.(png|jpg)$/,
       loader: 'url?limit=25000',
-    },],
+    }, {
+      test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "url-loader?limit=10000&minetype=application/font-woff"
+    }],
   },
   resolve: {
     modulesDirectories: ['node_modules', 'wip_modules',],

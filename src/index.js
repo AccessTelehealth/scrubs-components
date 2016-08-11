@@ -1,54 +1,28 @@
 /* @flow */
 
-import Avatar from './Avatar'
-export { Avatar, }
-import Action from './Action'
-export { Action, }
-import Back from './Back'
-export { Back, }
-import Byline from './Byline'
-export { Byline, }
-import Callout from './Callout'
-export { Callout, }
-import Column from './Column'
-export { Column, }
-import Field from './Field'
-export { Field, }
-import Heading from './Heading'
-export { Heading, }
-import Headline from './Headline'
-export { Headline, }
-import Hint from './Hint'
-export { Hint, }
-import Input from './Input'
-export { Input, }
-import Item from './Item'
-export { Item, }
-import ItemLink from './ItemLink'
-export { ItemLink, }
-import Label from './Label'
-export { Label, }
-import Link from './Link'
-export { Link, }
-import List from './List'
-export { List, }
-import Masthead from './Masthead'
-export { Masthead, }
-import Page from './Page'
-export { Page, }
-import Paragraph from './Paragraph'
-export { Paragraph, }
-import PrimaryButton from './PrimaryButton'
-export { PrimaryButton, }
-import Row from './Row'
-export { Row, }
-import Section from './Section'
-export { Section, }
-import Text from './Text'
-export { Text, }
-import Title from './Title'
-export { Title, }
-import Topbar from './Topbar'
-export { Topbar, }
-import View from './View'
-export { View, }
+export { default as Avatar } from './Avatar'
+export { default as Action } from './Action'
+export { default as Back } from './Back'
+export { default as Byline } from './Byline'
+export { default as Callout } from './Callout'
+export { default as Column } from './Column'
+export { default as Field } from './Field'
+export { default as Heading } from './Heading'
+export { default as Headline } from './Headline'
+export { default as Hint } from './Hint'
+export { default as Input } from './Input'
+export { default as Item } from './Item'
+export { default as ItemLink } from './ItemLink'
+export { default as Label } from './Label'
+export { default as Link } from './Link'
+export { default as List } from './List'
+export { default as Masthead } from './Masthead'
+export { default as Page } from './Page'
+export { default as Paragraph } from './Paragraph'
+export { default as PrimaryButton } from './PrimaryButton'
+export { default as Row } from './Row'
+export { default as Section } from './Section'
+export { default as Text } from './Text'
+export { default as Title } from './Title'
+export { default as Topbar } from './Topbar'
+export { default as View } from './View'

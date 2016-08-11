@@ -3,8 +3,7 @@
 import React from 'react'
 import styles from './index.css'
 import Text from 'scrubs-components/Text'
-import ArrowRight from 'scrubs-icons/arrow-right.svg'
-import ArrowLeft from 'scrubs-icons/arrow-left.svg'
+import { ArrowLeft, ArrowRight } from 'scrubs-icons'
 
 type IconType = 'right' | 'left'
 
