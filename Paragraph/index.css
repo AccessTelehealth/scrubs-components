@@ -1,0 +1,8 @@
+.Paragraph {
+  composes: mb2 from 'scrubs-traits/margin.css';
+}
+
+.ParagraphCentered {
+  composes: Paragraph;
+  composes: center from 'scrubs-traits/typography.css';
+}

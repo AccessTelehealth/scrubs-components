@@ -1,0 +1,3 @@
+.Section {
+  composes: pb2 from 'scrubs-traits/padding.css';
+}

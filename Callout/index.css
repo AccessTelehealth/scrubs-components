@@ -1,0 +1,6 @@
+.Callout {
+  composes: border rounded from 'scrubs-traits/borders.css';
+  composes: p3 from 'scrubs-traits/padding.css';
+  composes: mb3 from 'scrubs-traits/margin.css';
+  composes: borderGrey from 'scrubs-traits/colours.css';
+}

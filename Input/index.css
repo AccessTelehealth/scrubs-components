@@ -1,0 +1,18 @@
+.Input {
+  composes: border rounded from 'scrubs-traits/borders.css';
+  composes: textBlueDark bgGrey textBlueOnFocus borderBlueOnFocus from 'scrubs-traits/colours.css';
+  composes: h2 regular sans antialiased from 'scrubs-traits/typography.css';
+  composes: fillWidth from 'scrubs-traits/layout.css';
+  composes: p2 from 'scrubs-traits/padding.css';
+  composes: mb1 from 'scrubs-traits/margin.css';
+}
+
+.InputNormal {
+  composes: Input;
+  composes: borderGrey from 'scrubs-traits/colours.css';
+}
+
+.InputError {
+  composes: Input;
+  composes: borderRed from 'scrubs-traits/colours.css';
+}
