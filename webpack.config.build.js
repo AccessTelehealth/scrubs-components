@@ -1,5 +1,6 @@
 var path = require('path')
 var webpack = require('webpack')
+var ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 module.exports = {
   devtool: 'cheap-module-eval-source-map',
@@ -21,7 +22,7 @@ module.exports = {
       },
     }, {
       test: /\.css$/,
-      loader: 'style-loader!css-loader?modules&importLoaders=1&localIdentName=[local]!postcss-loader',
+      loader: ExtractTextPlugin.extract('style-loader', 'css-loader?modules&importLoaders=1&localIdentName=[local]!postcss-loader'),
     }, {
       test: /\.json$/,
       loader: 'json-loader',
@@ -39,6 +40,9 @@ module.exports = {
     }
   },
   plugins: [
+    new ExtractTextPlugin("styles.css", {
+      ignoreOrder: true
+    }),
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.NoErrorsPlugin(),
   ],
