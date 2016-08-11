@@ -4,19 +4,13 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "build": "webpack -p --progress --colors",
+    "build": "webpack -p --progress --colors --config webpack.config.build.js",
     "start": "webpack-dev-server --progress --colors --inline --hot"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dr-me/scrubs-components.git"
   },
-  "files": [
-    "dist/185396870469d8c00e98911413908026.woff",
-    "dist/37d9ed2ff0fea378ae2725a22e930114.woff",
-    "dist/a0043495dae4f6e03768e39f66cc60f8.woff",
-    "dist/d6fce3587e070309542248464c94e7a3.woff"
-  ],
   "devDependencies": {
     "babel-core": "^6.13.2",
     "babel-loader": "^6.2.4",
