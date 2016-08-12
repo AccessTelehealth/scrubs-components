@@ -19,6 +19,12 @@ module.exports = {
       test: /\.css$/,
       loader: 'style-loader!css-loader?modules&importLoaders=1&localIdentName=[local]!postcss-loader',
     }, {
+      test: /\.json$/,
+      loader: 'json-loader',
+    }, {
+      test: /\.(png|jpg)$/,
+      loader: 'url?limit=25000',
+    }, {
       test: /\.svg$/,
       loaders: ['react-svgdom', 'svgo']
     }, {
