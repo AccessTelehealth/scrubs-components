@@ -1,8 +1,8 @@
 /* @flow */
 
 import React from 'react'
-import { Byline, } from 'scrubs-components'
-import BylineString from '!raw!scrubs-components/Byline'
+import { Byline, } from '../'
+import BylineString from '!raw!..//Byline'
 import { parse, } from 'react-docgen'
 
 const example: React.Element<any> = (

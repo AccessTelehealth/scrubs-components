@@ -2,7 +2,7 @@
 
 import React from 'react'
 import styles from './index.css'
-import { Input, Label, Hint, } from 'scrubs-components'
+import { Input, Label, Hint, } from '../'
 import { getFieldById, } from 'scrubs-libs'
 
 type ValueType = string

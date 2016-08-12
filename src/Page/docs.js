@@ -1,9 +1,9 @@
 /* @flow */
 
 import React from 'react'
-import MastheadString from '!raw!scrubs-components/Masthead'
+import MastheadString from '!raw!..//Masthead'
 import { parse, } from 'react-docgen'
-import { Masthead, Headline, Byline, Page, Heading, Paragraph, Section, } from 'scrubs-components'
+import { Masthead, Headline, Byline, Page, Heading, Paragraph, Section, } from '../'
 
 const example: React.Element<any> = (
   <Page>

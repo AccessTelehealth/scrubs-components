@@ -1,9 +1,9 @@
 /* @flow */
 
 import React from 'react'
-import InputString from '!raw!scrubs-components/Input'
+import InputString from '!raw!..//Input'
 import { parse, } from 'react-docgen'
-import { Input, } from 'scrubs-components'
+import { Input, } from '../'
 
 const example: React.Element<any> = (
   <Input

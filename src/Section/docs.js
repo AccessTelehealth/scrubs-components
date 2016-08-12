@@ -1,9 +1,9 @@
 /* @flow */
 
 import React from 'react'
-import SectionString from '!raw!scrubs-components/Section'
+import SectionString from '!raw!..//Section'
 import { parse, } from 'react-docgen'
-import { Section, Heading, Paragraph, } from 'scrubs-components'
+import { Section, Heading, Paragraph, } from '../'
 
 const example: React.Element<any> = (
   <Section>

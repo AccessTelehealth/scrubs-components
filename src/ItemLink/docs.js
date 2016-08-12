@@ -1,9 +1,9 @@
 /* @flow */
 
 import React from 'react'
-import ItemLinkString from '!raw!scrubs-components/ItemLink'
+import ItemLinkString from '!raw!..//ItemLink'
 import { parse, } from 'react-docgen'
-import { ItemLink, Text, Row, Action, } from 'scrubs-components'
+import { ItemLink, Text, Row, Action, } from '../'
 
 const example: React.Element<any> = (
   <ItemLink>

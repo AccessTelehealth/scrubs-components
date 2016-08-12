@@ -2,7 +2,7 @@
 
 import React from 'react'
 import styles from './index.css'
-import { Text, } from 'scrubs-components'
+import { Text, } from '../'
 
 /** Label wrapper for form fields */
 

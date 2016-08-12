@@ -1,7 +1,7 @@
 /* @flow */
 
 import React from 'react'
-import Text from 'scrubs-components/Text'
+import Text from '..//Text'
 import styles from './index.css'
 
 type PropsType = {

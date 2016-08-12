@@ -1,9 +1,9 @@
 /* @flow */
 
 import React from 'react'
-import ItemString from '!raw!scrubs-components/Item'
+import ItemString from '!raw!..//Item'
 import { parse, } from 'react-docgen'
-import { List, Item, Text, Row, } from 'scrubs-components'
+import { List, Item, Text, Row, } from '../'
 
 const example: React.Element<any> = (
   <List>

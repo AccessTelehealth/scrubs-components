@@ -1,8 +1,8 @@
 /* @flow */
 
 import React from 'react'
-import Row from 'scrubs-components/Row'
-import Column from 'scrubs-components/Column'
+import Row from '..//Row'
+import Column from '..//Column'
 import styles from './index.css'
 
 type PropsType = {

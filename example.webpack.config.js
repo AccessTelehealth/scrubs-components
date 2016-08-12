@@ -17,7 +17,7 @@ module.exports = {
       loader: 'babel',
     }, {
       test: /\.css$/,
-      loader: 'style-loader!css-loader?modules&importLoaders=1&localIdentName=[local]!postcss-loader',
+      loader: 'style-loader!css-loader?modules&importLoaders=1&localIdentName=[local]',
     }, {
       test: /\.svg$/,
       loaders: ['react-svgdom', 'svgo']

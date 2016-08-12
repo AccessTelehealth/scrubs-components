@@ -1,9 +1,9 @@
 /* @flow */
 
 import React from 'react'
-import HintString from '!raw!scrubs-components/Hint'
+import HintString from '!raw!..//Hint'
 import { parse, } from 'react-docgen'
-import { Hint, } from 'scrubs-components'
+import { Hint, } from '../'
 
 const example: React.Element<any> = (
   <Hint

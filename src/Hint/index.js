@@ -1,7 +1,7 @@
 /* @flow */
 
 import React from 'react'
-import { Text, } from 'scrubs-components'
+import { Text, } from '../'
 
 type Value = string
 

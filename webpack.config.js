@@ -39,8 +39,7 @@ module.exports = {
     alias: {
       traits: 'scrubs-traits',
       icons: 'scrubs-icons',
-      theme: 'scrubs-theme',
-      'scrubs-components': path.join(__dirname, 'src')
+      theme: 'scrubs-theme'
     }
   },
   plugins: [

@@ -1,9 +1,9 @@
 /* @flow */
 
 import React from 'react'
-import ColumnString from '!raw!scrubs-components/Column'
+import ColumnString from '!raw!..//Column'
 import { parse, } from 'react-docgen'
-import { Column, Row, Back, Action, Title, } from 'scrubs-components'
+import { Column, Row, Back, Action, Title, } from '../'
 
 const example: React.Element<any> = (
   <Row>

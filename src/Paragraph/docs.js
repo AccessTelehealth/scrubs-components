@@ -1,9 +1,9 @@
 /* @flow */
 
 import React from 'react'
-import ParagraphString from '!raw!scrubs-components/Paragraph'
+import ParagraphString from '!raw!..//Paragraph'
 import { parse, } from 'react-docgen'
-import { Paragraph, } from 'scrubs-components'
+import { Paragraph, } from '../'
 
 const example: React.Element<any> = (
   <Paragraph>

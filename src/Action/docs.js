@@ -1,8 +1,8 @@
 /* @flow */
 
 import React from 'react'
-import { Action, } from 'scrubs-components'
-import ActionString from '!raw!scrubs-components/Action'
+import { Action } from '../'
+import ActionString from '!raw!..//Action'
 import { parse, } from 'react-docgen'
 
 const example: React.Element<any> = (

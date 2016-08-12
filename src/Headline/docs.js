@@ -1,9 +1,9 @@
 /* @flow */
 
 import React from 'react'
-import HeadlineString from '!raw!scrubs-components/Headline'
+import HeadlineString from '!raw!..//Headline'
 import { parse, } from 'react-docgen'
-import { Headline, } from 'scrubs-components'
+import { Headline, } from '../'
 
 const example: React.Element<any> = (
   <Headline>

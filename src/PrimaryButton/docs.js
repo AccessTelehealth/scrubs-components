@@ -1,9 +1,9 @@
 /* @flow */
 
 import React from 'react'
-import PrimaryButtonString from '!raw!scrubs-components/PrimaryButton'
+import PrimaryButtonString from '!raw!..//PrimaryButton'
 import { parse, } from 'react-docgen'
-import { PrimaryButton, } from 'scrubs-components'
+import { PrimaryButton, } from '../'
 
 const example: React.Element<any> = (
   <PrimaryButton>

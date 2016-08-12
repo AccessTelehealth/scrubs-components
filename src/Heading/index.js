@@ -2,7 +2,7 @@
 
 import React from 'react'
 import styles from './index.css'
-import Text from 'scrubs-components/Text'
+import Text from '..//Text'
 
 type PropsType = {
   children: React.Element<any>

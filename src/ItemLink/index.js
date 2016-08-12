@@ -1,8 +1,8 @@
 /* @flow */
 
 import React from 'react'
-import Item from 'scrubs-components/Item'
-import Link from 'scrubs-components/Link'
+import Item from '..//Item'
+import Link from '..//Link'
 
 type PropsType = {
   children: React.Element<any>,

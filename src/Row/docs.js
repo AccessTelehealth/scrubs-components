@@ -1,9 +1,9 @@
 /* @flow */
 
 import React from 'react'
-import RowString from '!raw!scrubs-components/Row'
+import RowString from '!raw!..//Row'
 import { parse, } from 'react-docgen'
-import { Row, Text, } from 'scrubs-components'
+import { Row, Text, } from '../'
 
 const example: React.Element<any> = (
   <Row>

@@ -1,9 +1,9 @@
 /* @flow */
 
 import React from 'react'
-import FieldString from '!raw!scrubs-components/Field'
+import FieldString from '!raw!..//Field'
 import { parse, } from 'react-docgen'
-import { Field, } from 'scrubs-components'
+import { Field, } from '../'
 import { getFieldById, } from 'scrubs-libs'
 
 type ValueType = string

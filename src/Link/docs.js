@@ -1,9 +1,9 @@
 /* @flow */
 
 import React from 'react'
-import LinkString from '!raw!scrubs-components/Link'
+import LinkString from '!raw!..//Link'
 import { parse, } from 'react-docgen'
-import { Link, Text, } from 'scrubs-components'
+import { Link, Text, } from '../'
 
 const example: React.Element<any> = (
   <Link>

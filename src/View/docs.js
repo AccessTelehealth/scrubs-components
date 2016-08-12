@@ -1,12 +1,12 @@
 /* @flow */
 
 import React from 'react'
-import TopbarString from '!raw!scrubs-components/Topbar'
+import TopbarString from '!raw!..//Topbar'
 import { parse, } from 'react-docgen'
 import {
   View, Page, Topbar, Title, Section, Back, Action, Masthead, Headline,
   Byline, Heading, Paragraph, List, Item, Row, Text,
-} from 'scrubs-components'
+} from '../'
 
 const example: React.Element<any> = (
   <View>

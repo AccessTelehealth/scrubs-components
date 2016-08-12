@@ -1,8 +1,8 @@
 /* @flow */
 
 import React from 'react'
-import Action from 'scrubs-components/Action'
-import Link from 'scrubs-components/Link'
+import Action from '..//Action'
+import Link from '..//Link'
 
 type PropsType = {
   to?: string,

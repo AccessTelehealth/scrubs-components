@@ -1,9 +1,9 @@
 /* @flow */
 
 import React from 'react'
-import TopbarString from '!raw!scrubs-components/Topbar'
+import TopbarString from '!raw!../Topbar'
 import { parse, } from 'react-docgen'
-import { Topbar, Title, Back, Action, } from 'scrubs-components'
+import { Topbar, Title, Back, Action, } from '../'
 
 const example: React.Element<any> = (
   <Topbar>
