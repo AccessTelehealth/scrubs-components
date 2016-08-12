@@ -16,7 +16,7 @@ npm start
 
 To create a new component:
 - Create a new folder in `src` with an `index.js` file and a `docs.js` file.
-– If the component has styling, add a `index.css` file in the same folder.
+- If the component has styling, add a `index.css` file in the same folder.
 - Create a new named export in `src/index.js`:
 ```
 export { default as NewComponent } from './NewComponent'
