@@ -2,15 +2,15 @@
 }
 
 .ColumnEqual {
-  composes: flexSkrink1 flexGrow1 flexBasis0 from 'scrubs-traits/flexbox.css';
+  composes: flexSkrink1 flexGrow1 flexBasis0 from 'traits/flexbox.css';
 }
 
 .ColumnCentered {
-  composes: center from 'scrubs-traits/typography.css';
+  composes: center from 'traits/typography.css';
 }
 
 .ColumnRight {
-  composes: flex flexRowReverse from 'scrubs-traits/flexbox.css';
+  composes: flex flexRowReverse from 'traits/flexbox.css';
 }
 
 .ColumnEqualCentered {

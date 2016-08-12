@@ -1,7 +1,7 @@
 .PrimaryButton {
-  composes: fillWidth from 'scrubs-traits/layout.css';
-  composes: bgBlue borderBlueDark from 'scrubs-traits/colours.css';
-  composes: rounded borderBottom from 'scrubs-traits/borders.css';
-  composes: p3 from 'scrubs-traits/padding.css';
-  composes: mt3 from 'scrubs-traits/margin.css';
+  composes: fillWidth from 'traits/layout.css';
+  composes: bgBlue borderBlueDark from 'traits/colours.css';
+  composes: rounded borderBottom from 'traits/borders.css';
+  composes: p3 from 'traits/padding.css';
+  composes: mt3 from 'traits/margin.css';
 }

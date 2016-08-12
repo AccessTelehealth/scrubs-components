@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import defaults from 'scrubs-traits/defaults.css'
+import defaults from 'traits/defaults.css'
 import * as components from './components'
 
 const Docs = ({ components }) => {

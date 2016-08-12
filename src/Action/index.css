@@ -1,19 +1,19 @@
 .Action {
-  composes: flex itemsCenter from 'scrubs-traits/flexbox.css';
+  composes: flex itemsCenter from 'traits/flexbox.css';
 }
 
 .ActionIcon {
-  composes: fillBlue from 'scrubs-traits/colours.css';
-  composes: iconSmall from 'scrubs-traits/icons.css';
+  composes: fillBlue from 'traits/colours.css';
+  composes: iconSmall from 'traits/icons.css';
 }
 
 .ActionIconRight {
   composes: ActionIcon;
-  composes: ml1 from 'scrubs-traits/margin.css';
+  composes: ml1 from 'traits/margin.css';
 }
 
 .ActionIconLeft {
   composes: ActionIcon;
-  composes: mr1 from 'scrubs-traits/margin.css';
-  composes: left from 'scrubs-traits/layout.css';
+  composes: mr1 from 'traits/margin.css';
+  composes: left from 'traits/layout.css';
 }

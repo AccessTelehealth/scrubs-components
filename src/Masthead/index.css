@@ -1,5 +1,5 @@
 .Masthead {
-  composes: py3 from 'scrubs-traits/padding.css';
-  composes: mb3 from 'scrubs-traits/margin.css';
-  composes: center from 'scrubs-traits/typography.css';
+  composes: py3 from 'traits/padding.css';
+  composes: mb3 from 'traits/margin.css';
+  composes: center from 'traits/typography.css';
 }

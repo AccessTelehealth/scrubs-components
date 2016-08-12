@@ -1,8 +1,8 @@
 .Paragraph {
-  composes: mb2 from 'scrubs-traits/margin.css';
+  composes: mb2 from 'traits/margin.css';
 }
 
 .ParagraphCentered {
   composes: Paragraph;
-  composes: center from 'scrubs-traits/typography.css';
+  composes: center from 'traits/typography.css';
 }
