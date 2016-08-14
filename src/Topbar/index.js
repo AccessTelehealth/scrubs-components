@@ -1,12 +1,12 @@
 /* @flow */
 
 import React from 'react'
-import Row from '..//Row'
-import Column from '..//Column'
+import Row from '../Row'
+import Column from '../Column'
 import styles from './index.css'
 
 type PropsType = {
-  children: Array<React.Element<any>> | React.Element<any>,
+  children?:Array<React.Element<any>> | React.Element<any>,
   fixed?: bool
 }
 

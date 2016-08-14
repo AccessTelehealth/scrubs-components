@@ -2,10 +2,10 @@
 
 import React from 'react'
 import styles from './index.css'
-import Text from '..//Text'
+import Text from '../Text'
 
 type PropsType = {
-  children: React.Element<any>
+  children?:React.Element<any>
 }
 
 /** A heading, used to denote the start of a Section */

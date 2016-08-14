@@ -1,10 +1,10 @@
 /* @flow */
 
 import React from 'react'
-import Text from '..//Text'
+import Text from '../Text'
 
 type PropsType = {
-  children: React.Element<any>,
+  children?: React.Element<any>,
 }
 
 /** A byline to be used beneath a headline */

@@ -4,7 +4,7 @@ import React from 'react'
 import { Text } from '../'
 
 type PropsType = {
-  children: React.Element<any>,
+  children?:React.Element<any>,
 }
 
 /** Styles for titles in topbars */

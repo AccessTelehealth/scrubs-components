@@ -1,8 +1,8 @@
 /* @flow */
 
 import React from 'react'
-import Action from '..//Action'
-import Link from '..//Link'
+import Action from '../Action'
+import Link from '../Link'
 
 type PropsType = {
   to?: string,

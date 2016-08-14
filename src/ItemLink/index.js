@@ -1,11 +1,11 @@
 /* @flow */
 
 import React from 'react'
-import Item from '..//Item'
-import Link from '..//Link'
+import Item from '../Item'
+import Link from '../Link'
 
 type PropsType = {
-  children: React.Element<any>,
+  children?:React.Element<any>,
   to?: string,
   onClick?: () => void
 }

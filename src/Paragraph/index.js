@@ -1,11 +1,11 @@
 /* @flow */
 
 import React from 'react'
-import Text from '..//Text'
+import Text from '../Text'
 import styles from './index.css'
 
 type PropsType = {
-  children: React.Element<any>,
+  children?:React.Element<any>,
   centered?: bool
 }
 

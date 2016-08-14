@@ -4,7 +4,7 @@ import React from 'react'
 import styles from './index.css'
 
 type PropsType = {
-  children: React.Element<any>,
+  children?:React.Element<any>,
 }
 
 /** A box with spacing for user attention */
