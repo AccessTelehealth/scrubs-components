@@ -28,15 +28,20 @@ export { default as NewComponent } from '../NewComponent/docs'
 - You should see your example component at [http://localhost:8080/newcomponent](http://localhost:8080/newcomponent)
 
 ## Setting up scrubs-components in a project
-To get the most out of scrubs-components, including flow type annotations and theming it is encouraged that you use webpack with the babel loader and css modules. Be sure the `scrubs-components` module is not excluded with other `node_modules` when defining which files babel loads. Check the `example.webpack.config.js` and `.babelrc` as a starting point.
+To get the most out of scrubs-components, including flow type annotations and theming, it is encouraged that you use webpack with the babel loader and css modules. Be sure the `scrubs-components` module is not excluded with other `node_modules` when defining which files babel loads. Check the `example.webpack.config.js` and `.babelrc` as a starting point.
 
-## Dependencies
-Scrubs components rely on a few other modules:
-– `theme`: Theme file for traits (default: scrubs-theme)
-– `traits`: Utility classes for scrubs (default: scrubs-traits)
+### Dependencies when using recommended setup
+If you are using scrubs in the above manner you will need to declare the theme, traits and icons modules upon which it depends:
+- `theme`: Theme file for traits (default: scrubs-theme)
+- `traits`: Utility classes for scrubs (default: scrubs-traits)
 - `icons`: Icons for UI hints, actions and navigation
 
-These can all be overwritten when imports scrubs components individually in a webpack configuration file using the `alias` option in `resolve`:
+If you wish to use the default modules:
+```bash
+npm install dr-me/scrubs-theme dr-me/scrubs-traits dr-me/scrubs-icons --save-dev
+```
+
+Add the following aliases to your webpack configuration file using the `alias` option in `resolve`:
 ```javascript
 alias: {
   traits: 'scrubs-traits',
@@ -44,3 +49,4 @@ alias: {
   theme: 'scrubs-theme',
 }
 ```
+You may also override these aliases if you wish to use different modules.
