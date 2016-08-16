@@ -11,6 +11,9 @@
     "type": "git",
     "url": "git+https://github.com/dr-me/scrubs-components.git"
   },
+  "dependencies": {
+    "scrubs-libs": "github:dr-me/scrubs-libs"
+  },
   "devDependencies": {
     "babel-core": "^6.13.2",
     "babel-eslint": "^6.1.2",
@@ -33,7 +36,6 @@
     "react-docgen": "^2.9.1",
     "react-svgdom-loader": "^3.0.0",
     "scrubs-icons": "github:dr-me/scrubs-icons",
-    "scrubs-libs": "github:dr-me/scrubs-libs",
     "scrubs-theme": "github:dr-me/scrubs-theme",
     "scrubs-traits": "github:dr-me/scrubs-traits",
     "style-loader": "^0.13.1",
