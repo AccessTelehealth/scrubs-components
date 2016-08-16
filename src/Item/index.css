@@ -1,5 +1,9 @@
 .Item {
   composes: py2 from 'traits/padding.css';
+}
+
+.ItemBorder {
+  composes: Item;
   composes: borderTop from 'traits/borders.css';
   composes: borderGrey from 'traits/colours.css';
 }

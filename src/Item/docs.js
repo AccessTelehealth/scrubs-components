@@ -6,7 +6,7 @@ import { parse, } from 'react-docgen'
 import { Item, Text, Row, } from '../'
 
 const example: React.Element<any> = (
-  <Item>
+  <Item border>
     <Row><Text small bold>Amoxicillin</Text></Row>
     <Row><Text small>5mg capsule</Text></Row>
   </Item>

@@ -13,7 +13,7 @@ module.exports = {
   module: {
     loaders: [{
       test: /\.js$/,
-      exclude: /node_modules\/(?!(scrubs-icons)\/).*/,
+      exclude: /node_modules\/(?!scrubs-(icons|libs)\/).*/,
       loader: 'babel',
     }, {
       test: /\.css$/,
