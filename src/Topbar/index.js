@@ -1,8 +1,7 @@
 /* @flow */
 
 import React from 'react'
-import Row from '../Row'
-import Column from '../Column'
+import Grid from '../Grid'
 import styles from './index.css'
 
 type PropsType = {
@@ -24,26 +23,13 @@ const Topbar = (props: PropsType) : React.Element<any> => {
 }
 
 const renderChildren = (children) : React.Element<any> | false => {
-  switch (children.length) {
-  case 2:
-    return (
-        <Row>
-          <Column equal>{children[0]}</Column>
-          <Column equal centered>{children[1]}</Column>
-          <Column equal right></Column>
-        </Row>
-      )
-  case 3:
-    return (
-        <Row>
-          <Column equal>{children[0]}</Column>
-          <Column equal centered>{children[1]}</Column>
-          <Column equal right>{children[2]}</Column>
-        </Row>
-      )
-  default:
-    return false
-  }
+  return (
+    <div>
+      <Grid cols={3} align='middle'>{children[0]}</Grid>
+      <Grid cols={6} align='middle' textAlign='center'>{children[1]}</Grid>
+      <Grid cols={3} align='middle' textAlign="right">{children.length === 3 && children[2]}</Grid>
+    </div>
+  )
 }
 
 export default Topbar

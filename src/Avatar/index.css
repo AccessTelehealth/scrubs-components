@@ -12,3 +12,8 @@
   composes: Avatar;
   composes: imageMedium from 'traits/images.css';
 }
+
+.AvatarFill {
+  composes: Avatar;
+  composes: pt100 from 'traits/padding.css';
+}

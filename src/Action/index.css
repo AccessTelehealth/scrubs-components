@@ -1,5 +1,4 @@
 .Action {
-  composes: flex itemsCenter from 'traits/flexbox.css';
 }
 
 .ActionIcon {
@@ -10,6 +9,7 @@
 .ActionIconRight {
   composes: ActionIcon;
   composes: ml1 from 'traits/margin.css';
+  composes: right from 'traits/layout.css';
 }
 
 .ActionIconLeft {

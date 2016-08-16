@@ -5,7 +5,7 @@ import TopbarString from '!raw!..//Topbar'
 import { parse, } from 'react-docgen'
 import {
   View, Page, Topbar, Title, Section, Back, Action, Masthead, Headline,
-  Byline, Heading, Paragraph, List, Item, Row, Text,
+  Byline, Heading, Paragraph, List, Item, Row, Text, Grid,
 } from '../'
 
 const example: React.Element<any> = (
@@ -31,14 +31,22 @@ const example: React.Element<any> = (
         <List>
           <Item>
             <Row>
-              <Text small bold>Amoxycillin</Text>
-              <Action icon="right">View</Action>
+              <Grid cols={9} align='middle'>
+                <Text small bold>Amoxycillin</Text>
+              </Grid>
+              <Grid cols={3} align='middle' textAlign='right'>
+                <Action icon='right'>View</Action>
+              </Grid>
             </Row>
           </Item>
           <Item>
             <Row>
-              <Text small bold>Medical Certificate</Text>
-              <Action icon="right">View</Action>
+              <Grid cols={9} align='middle'>
+                <Text small bold>Medical Certificate</Text>
+              </Grid>
+              <Grid cols={3} align='middle' textAlign='right'>
+                <Action icon='right'>View</Action>
+              </Grid>
             </Row>
           </Item>
         </List>

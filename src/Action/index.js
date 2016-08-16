@@ -2,7 +2,7 @@
 
 import React from 'react'
 import styles from './index.css'
-import { Text } from '../'
+import { Text, Grid } from '../'
 import { ArrowLeft, ArrowRight } from 'scrubs-icons'
 
 type IconType = 'right' | 'left'
@@ -18,7 +18,7 @@ const Action = (props: PropsType): React.Element<any> => {
   return (
     <span className={styles.Action}>
       {props.icon && props.icon === 'left' && renderIcon(props.icon)}
-      <Text small blue bold>{ props.children }</Text>
+      <Grid align='middle'><Text small blue bold>{ props.children }</Text></Grid>
       {props.icon && props.icon !== 'left' && renderIcon(props.icon)}
     </span>
   )
@@ -27,9 +27,9 @@ const Action = (props: PropsType): React.Element<any> => {
 const renderIcon = (icon: IconType): React.Element<any> | false => {
   switch (icon) {
   case 'right':
-    return <ArrowRight className={styles.ActionIconRight} />
+    return <Grid align='middle'><ArrowRight className={styles.ActionIconRight} /></Grid>
   case 'left':
-    return <ArrowLeft className={styles.ActionIconLeft} />
+    return <Grid align='middle'><ArrowLeft className={styles.ActionIconLeft} /></Grid>
   default:
     return false
   }

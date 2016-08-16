@@ -1,0 +1,111 @@
+.Grid {
+  composes: inlineBlock from 'traits/layout.css';
+}
+
+.GridTop {
+  composes: alignTop from 'traits/align.css';
+}
+
+.GridMiddle {
+  composes: alignMiddle from 'traits/align.css';
+}
+
+.GridBottom {
+  composes: alignBottom from 'traits/align.css';
+}
+
+.GridBaseline {
+  composes: alignBaseline from 'traits/align.css';
+}
+
+.GridLeft {
+  composes: leftAlign from 'traits/typography.css';
+}
+
+.GridRight {
+  composes: rightAlign from 'traits/typography.css';
+}
+
+.GridCenter {
+  composes: center from 'traits/typography.css';
+}
+
+.GridNormalNormal {
+  composes: Grid;
+}
+
+.GridNormalLeft {
+  composes: Grid GridLeft;
+}
+
+.GridNormalRight {
+  composes: Grid GridRight;
+}
+
+.GridNormalCenter {
+  composes: Grid GridCenter;
+}
+
+.GridTopNormal {
+  composes: Grid GridTop;
+}
+
+.GridTopLeft {
+  composes: Grid GridTop GridLeft;
+}
+
+.GridTopRight {
+  composes: Grid GridTop GridRight;
+}
+
+.GridTopCenter {
+  composes: Grid GridTop GridCenter;
+}
+
+.GridMiddleNormal {
+  composes: Grid GridMiddle;
+}
+
+.GridMiddleLeft {
+  composes: Grid GridMiddle GridLeft;
+}
+
+.GridMiddleRight {
+  composes: Grid GridMiddle GridRight;
+}
+
+.GridMiddleCenter {
+  composes: Grid GridMiddle GridCenter;
+}
+
+.GridBottomNormal {
+  composes: Grid GridBottom;
+}
+
+.GridBottomLeft {
+  composes: Grid GridBottom GridLeft;
+}
+
+.GridBottomRight {
+  composes: Grid GridBottom GridRight;
+}
+
+.GridBottomCenter {
+  composes: Grid GridBottom GridCenter;
+}
+
+.GridBaselineNormal {
+  composes: Grid GridBaseline;
+}
+
+.GridBaselineLeft {
+  composes: Grid GridBaseline GridLeft;
+}
+
+.GridBaselineRight {
+  composes: Grid GridBaseline GridRight;
+}
+
+.GridBaselineCenter {
+  composes: Grid GridBaseline GridCenter;
+}
