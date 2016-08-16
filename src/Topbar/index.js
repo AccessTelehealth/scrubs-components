@@ -14,7 +14,9 @@ type PropsType = {
 const Topbar = (props: PropsType) : React.Element<any> => {
   const { fixed, children, } = props
   const className = fixed ? styles.TopbarFixed : styles.Topbar
-  const contents = Array.isArray(children) ? renderChildren(children) : children
+  const contents = Array.isArray(children)
+    ? renderChildren(children)
+    : <Grid cols={12} align='middle' textAlign='center'>{children}</Grid>
   return (
     <div className={className}>
       {contents}
@@ -27,7 +29,7 @@ const renderChildren = (children) : React.Element<any> | false => {
     <div>
       <Grid cols={3} align='middle'>{children[0]}</Grid>
       <Grid cols={6} align='middle' textAlign='center'>{children[1]}</Grid>
-      <Grid cols={3} align='middle' textAlign="right">{children.length === 3 && children[2]}</Grid>
+      <Grid cols={3} align='middle' textAlign='right'>{children.length === 3 && children[2]}</Grid>
     </div>
   )
 }
