@@ -2,7 +2,7 @@
 
 import React from 'react'
 import TopbarString from '!raw!..//Topbar'
-import { parse, } from 'react-docgen'
+import { parse } from 'react-docgen'
 import {
   View, Page, Topbar, Title, Section, Back, Action, Masthead, Headline,
   Byline, Heading, Paragraph, List, Item, Row, Text, Grid,
@@ -13,7 +13,7 @@ const example: React.Element<any> = (
     <Topbar>
       <Back />
       <Title>Consultation</Title>
-      <Action icon="right">Edit</Action>
+      <Action icon='arrowRight' iconSide='right'>Edit</Action>
     </Topbar>
     <Page>
       <Masthead>
@@ -35,7 +35,7 @@ const example: React.Element<any> = (
                 <Text small bold>Amoxycillin</Text>
               </Grid>
               <Grid cols={3} align='middle' textAlign='right'>
-                <Action icon='right'>View</Action>
+                <Action icon='arrowRight' iconSide='right'>View</Action>
               </Grid>
             </Row>
           </Item>
@@ -45,7 +45,7 @@ const example: React.Element<any> = (
                 <Text small bold>Medical Certificate</Text>
               </Grid>
               <Grid cols={3} align='middle' textAlign='right'>
-                <Action icon='right'>View</Action>
+                <Action icon='arrowRight' iconSide='right'>View</Action>
               </Grid>
             </Row>
           </Item>

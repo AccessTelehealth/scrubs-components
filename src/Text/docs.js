@@ -2,7 +2,7 @@
 
 import React from 'react'
 import TextString from '!raw!..//Text'
-import { parse, } from 'react-docgen'
+import { parse } from 'react-docgen'
 import { Text, Section, } from '../'
 
 const example: React.Element<any> = (

@@ -2,7 +2,7 @@
 
 import React from 'react'
 import PrimaryButtonString from '!raw!..//PrimaryButton'
-import { parse, } from 'react-docgen'
+import { parse } from 'react-docgen'
 import { PrimaryButton, } from '../'
 
 const example: React.Element<any> = (

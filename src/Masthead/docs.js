@@ -2,7 +2,7 @@
 
 import React from 'react'
 import MastheadString from '!raw!..//Masthead'
-import { parse, } from 'react-docgen'
+import { parse } from 'react-docgen'
 import { Masthead, Headline, Byline, } from '../'
 
 const example: React.Element<any> = (

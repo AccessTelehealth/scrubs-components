@@ -2,7 +2,7 @@
 
 import React from 'react'
 import ParagraphString from '!raw!..//Paragraph'
-import { parse, } from 'react-docgen'
+import { parse } from 'react-docgen'
 import { Paragraph, } from '../'
 
 const example: React.Element<any> = (

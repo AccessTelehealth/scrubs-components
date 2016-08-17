@@ -1,13 +1,13 @@
 /* @flow */
 
 import React from 'react'
-import { Router, Route, browserHistory, IndexRoute, } from 'react-router'
+import { Router, Route, browserHistory } from 'react-router'
 import ReactDOM from 'react-dom'
 // import defaults from 'traits/defaults.css'
 import * as components from './components'
 import Home from './Home'
 import {
-  View, Section, Page, Row, Text, Item, List, Topbar, Back, Title, Heading,
+  View, Section, Page, Row, Text, Item, List, Topbar, Title, Heading,
 } from '../src/'
 
 class Wrapper extends React.Component {

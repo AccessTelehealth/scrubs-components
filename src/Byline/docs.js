@@ -3,7 +3,7 @@
 import React from 'react'
 import { Byline, } from '../'
 import BylineString from '!raw!..//Byline'
-import { parse, } from 'react-docgen'
+import { parse } from 'react-docgen'
 
 const example: React.Element<any> = (
   <Byline>

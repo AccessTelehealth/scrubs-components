@@ -2,7 +2,7 @@
 
 import React from 'react'
 import HeadlineString from '!raw!..//Headline'
-import { parse, } from 'react-docgen'
+import { parse } from 'react-docgen'
 import { Headline, } from '../'
 
 const example: React.Element<any> = (

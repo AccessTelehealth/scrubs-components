@@ -2,7 +2,7 @@
 
 import React from 'react'
 import RowString from '!raw!..//Row'
-import { parse, } from 'react-docgen'
+import { parse } from 'react-docgen'
 import { Row, Text, } from '../'
 
 const example: React.Element<any> = (

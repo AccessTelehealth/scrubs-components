@@ -2,7 +2,7 @@
 
 import React from 'react'
 import FieldString from '!raw!..//Field'
-import { parse, } from 'react-docgen'
+import { parse } from 'react-docgen'
 import { Field, } from '../'
 import { getFieldById, } from 'scrubs-libs'
 
