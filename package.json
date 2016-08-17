@@ -12,6 +12,7 @@
     "url": "git+https://github.com/dr-me/scrubs-components.git"
   },
   "dependencies": {
+    "react-router": "^2.6.1",
     "scrubs-libs": "github:dr-me/scrubs-libs"
   },
   "devDependencies": {
