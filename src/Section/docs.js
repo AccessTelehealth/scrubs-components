@@ -2,7 +2,7 @@
 
 import React from 'react'
 import SectionString from '!raw!..//Section'
-import { parse, } from 'react-docgen'
+import { parse } from 'react-docgen'
 import { Section, Heading, Paragraph, } from '../'
 
 const example: React.Element<any> = (

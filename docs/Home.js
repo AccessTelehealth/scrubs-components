@@ -24,7 +24,7 @@ export default class Home extends React.Component {
                       <Text large>{name}</Text>
                     </Grid>
                     <Grid cols={1} align='middle' padding={{right: 'small'}}>
-                      <Action icon="right">View</Action>
+                      <Action icon="arrowRight" iconSide="right">View</Action>
                     </Grid>
                   </Row>
                 </Link>

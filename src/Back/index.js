@@ -14,7 +14,7 @@ type PropsType = {
 const Back = (props: PropsType): React.Element<any> => {
   return (
     <Link to={props.to && props.to} onClick={props.onClick && props.onClick}>
-      <Action icon="left">
+      <Action icon="arrowLeft">
         Back
       </Action>
     </Link>

@@ -2,7 +2,7 @@
 
 import React from 'react'
 import InputString from '!raw!..//Input'
-import { parse, } from 'react-docgen'
+import { parse } from 'react-docgen'
 import { Input, } from '../'
 
 const example: React.Element<any> = (

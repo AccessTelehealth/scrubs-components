@@ -2,7 +2,7 @@
 
 import React from 'react'
 import TitleString from '!raw!..//Title'
-import { parse, } from 'react-docgen'
+import { parse } from 'react-docgen'
 import { Title, } from '../'
 
 const example: React.Element<any> = (

@@ -2,7 +2,7 @@
 
 import React from 'react'
 import HintString from '!raw!..//Hint'
-import { parse, } from 'react-docgen'
+import { parse } from 'react-docgen'
 import { Hint, } from '../'
 
 const example: React.Element<any> = (

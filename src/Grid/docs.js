@@ -2,7 +2,7 @@
 
 import React from 'react'
 import GridString from '!raw!..//Grid'
-import { parse, } from 'react-docgen'
+import { parse } from 'react-docgen'
 import { Grid, Avatar, Item, Row, Text, Action } from '../'
 
 const data = {
@@ -25,7 +25,7 @@ const example: React.Element<any> = (
             <Text small bold>{name}</Text>
           </Grid>
           <Grid cols={3} align='middle' textAlign='right'>
-            <Action icon='right' to={link}>
+            <Action icon='arrowRight' iconSide='right' to={link}>
               View
             </Action>
           </Grid>

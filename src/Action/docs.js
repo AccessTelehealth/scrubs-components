@@ -1,12 +1,15 @@
 /* @flow */
 
 import React from 'react'
-import { Action } from '../'
+import { Action, Row } from '../'
 import ActionString from '!raw!..//Action'
-import { parse, } from 'react-docgen'
+import { parse } from 'react-docgen'
 
 const example: React.Element<any> = (
-  <Action icon="right">Next</Action>
+  <Row>
+    <Action icon="arrowLeft" iconSide="left">Prev</Action>
+    <Action icon="arrowRight" iconSide="right">Next</Action>
+  </Row>
 )
 
 const documentation: Object = parse(ActionString)
