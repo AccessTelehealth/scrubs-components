@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router'
 import * as components from './components'
 import {
-  View, Topbar, Title, Action, Page,  Row, Text, Item,
+  View, Topbar, Title, Action, Page,  Row, Text, Item, Grid,
 } from '../src/'
 
 
@@ -17,11 +17,15 @@ export default class Home extends React.Component {
       <Page>
           {Object.keys(components).map((name) => {
             return (
-              <Item>
+              <Item border={true}>
                 <Link to={`/components/${camelCaseToLowerCase(name)}`}>
                   <Row>
-                      <Text>{name}</Text>
+                    <Grid cols={11} align='middle' padding={{left: 'large'}}>
+                      <Text large>{name}</Text>
+                    </Grid>
+                    <Grid cols={1} align='middle' padding={{right: 'small'}}>
                       <Action icon="right">View</Action>
+                    </Grid>
                   </Row>
                 </Link>
               </Item>
