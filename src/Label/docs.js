@@ -1,13 +1,13 @@
 /* @flow */
 
 import React from 'react'
-import TitleString from '!raw!..//Title'
+import ItemString from '!raw!..//Item'
 import { parse } from 'react-docgen'
-import { Title } from '../'
+import { Label } from '../'
 
 const Example = (): React.Element<*> => {
-  return  <Title>Consultation</Title>
+  return <Label> test </Label>
 }
 
-const documentation: Object = parse(TitleString)
+const documentation: Object = parse(ItemString)
 export default { Example, documentation }

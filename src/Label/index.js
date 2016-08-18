@@ -2,7 +2,7 @@
 
 import React from 'react'
 import styles from './index.css'
-import { Text, } from '../'
+import { Text } from '../'
 
 /** Label wrapper for form fields */
 
@@ -11,7 +11,7 @@ type PropsType = {
 }
 
 const Label = (props: PropsType): React.Element<any> => {
-  const { text, } = props
+  const { text } = props
   return (
     <label className={styles.Label}>
       <Text small bold>{text}</Text>
