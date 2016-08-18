@@ -5,9 +5,9 @@ import { Action } from '../'
 import ActionString from '!raw!..//Action'
 import { parse } from 'react-docgen'
 
-const example: React.Element<any> = (
-  <Action icon="arrowLeft" iconSide="left">Prev</Action>
-)
+const Example = (): React.Element<*> => {
+  return <Action icon="arrowLeft" iconSide="left">Prev</Action>
+}
 
 const documentation: Object = parse(ActionString)
-export default { example, documentation }
+export default { Example, documentation }
