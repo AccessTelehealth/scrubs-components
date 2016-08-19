@@ -3,7 +3,7 @@
 import React from 'react'
 import ItemString from '!raw!..//Item'
 import { parse } from 'react-docgen'
-import { Item, Text, Row, } from '../'
+import { Item, Text, Row } from '../'
 
 const Example = (): React.Element<*> => {
   return (
@@ -15,4 +15,4 @@ const Example = (): React.Element<*> => {
 }
 
 const documentation: Object = parse(ItemString)
-export default { Example, documentation, }
+export default { Example, documentation }

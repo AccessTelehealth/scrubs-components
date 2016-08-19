@@ -29,7 +29,7 @@ class Field extends React.Component {
   props: PropsType
 
   onInputChange(event: Event) {
-    const { updateFieldValue, id, } = this.props
+    const { updateFieldValue, id } = this.props
     event.preventDefault()
     let target = event.target
     let value = target instanceof HTMLInputElement ? target.value : ''
@@ -39,7 +39,7 @@ class Field extends React.Component {
   }
 
   render(): React.Element<any> {
-    const { fields, id, editable, } = this.props
+    const { fields, id } = this.props
     const field = getFieldById(id, fields)
     const {
       placeholder, label, hint, validateField, value,
