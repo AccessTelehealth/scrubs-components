@@ -1,22 +1,32 @@
 /* @flow */
 
 import React from 'react'
-import styles from './index.css'
+import classnames from 'classnames'
+import { circle } from 'traits/borders.css'
+import { bgCover, bgCenter, imageSmall, imageMedium } from 'traits/images.css'
+import { pt100 } from 'traits/padding.css'
 
 type PropsType = {
   url: string,
-  small?: boolean,
-  fill?: boolean
+  size?: 'small' | 'fill',
 }
 
 /** Avatars for user images */
 
 const Avatar = (props: PropsType): React.Element<any> => {
-  let className = props.small ? styles.AvatarSmall : styles.AvatarMedium
-  className = props.fill ? styles.AvatarFill : className
-  const backgroundImage = `url('${props.url}')`
+  const backgroundImage = `url(${props.url})`
   return (
-    <div className={className} style={{backgroundImage: backgroundImage,}} />
+    <div className={avatarClasses(props)} style={{backgroundImage: backgroundImage}} />
+  )
+}
+
+const avatarClasses = (props: PropsType): string => {
+  return classnames(
+    circle, bgCover, bgCenter, {
+      [imageSmall]: props.size === 'small',
+      [imageMedium]: !props.size,
+      [pt100]: props.size === 'fill',
+    }
   )
 }
 

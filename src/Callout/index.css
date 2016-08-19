@@ -1,6 +1,0 @@
-.Callout {
-  composes: border rounded from 'traits/borders.css';
-  composes: p3 from 'traits/padding.css';
-  composes: mb3 from 'traits/margin.css';
-  composes: borderGrey from 'traits/colours.css';
-}
