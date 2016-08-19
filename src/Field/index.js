@@ -1,7 +1,8 @@
 /* @flow */
 
 import React from 'react'
-import styles from './index.css'
+import classnames from 'classnames'
+import { mb2 } from 'traits/margin.css';
 import { Input, Label, Hint } from '../'
 import { getFieldById } from 'scrubs-libs'
 
@@ -50,7 +51,7 @@ class Field extends React.Component {
     const fieldHasError = fieldIsInvalid && value.length !== 0
     const hintText = fieldHasError ? errorText : hint
     return (
-      <div className={styles.Field}>
+      <div className={fieldClasses()}>
         <Label text={label} />
         <Input
           value={value}
@@ -63,5 +64,10 @@ class Field extends React.Component {
     )
   }
 }
+
+const fieldClasses = (): string => {
+  return classnames( mb2 )
+}
+
 
 export default Field

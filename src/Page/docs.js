@@ -1,7 +1,7 @@
 /* @flow */
 
 import React from 'react'
-import MastheadString from '!raw!..//Masthead'
+import PageString from '!raw!..//Page'
 import { parse } from 'react-docgen'
 import { Masthead, Headline, Byline, Page, Heading, Paragraph, Section } from '../'
 
@@ -24,5 +24,5 @@ const Example = (): React.Element<*> => {
   )
 }
 
-const documentation: Object = parse(MastheadString)
+const documentation: Object = parse(PageString)
 export default { Example, documentation }

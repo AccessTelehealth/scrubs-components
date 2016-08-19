@@ -2,19 +2,31 @@
 
 import React from 'react'
 import Text from '../Text'
-import styles from './index.css'
+import classnames from 'classnames'
+import { fillWidth } from 'traits/layout.css'
+import { bgBlue, borderBlueDark } from 'traits/colours.css'
+import { rounded, borderBottom } from 'traits/borders.css'
+import { p3 } from 'traits/padding.css'
+import { mt3 } from 'traits/margin.css'
 
 type PropsType = {
-  children?:React.Element<any>,
+  children?: React.Element<any>,
 }
 
 /** A full width button for primary actions */
 
 const PrimaryButton = (props: PropsType) : React.Element<any> => {
   return (
-    <button className={styles.PrimaryButton}>
+    <button className={primaryButtonClasses(props)}>
       <Text bold white>{props.children}</Text>
     </button>
+  )
+}
+
+const primaryButtonClasses = (): string => {
+  return classnames(
+      fillWidth, bgBlue, borderBlueDark,
+      rounded, borderBottom, p3, mt3
   )
 }
 

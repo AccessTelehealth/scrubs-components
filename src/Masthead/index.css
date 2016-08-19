@@ -1,5 +1,0 @@
-.Masthead {
-  composes: py3 from 'traits/padding.css';
-  composes: mb3 from 'traits/margin.css';
-  composes: center from 'traits/typography.css';
-}
