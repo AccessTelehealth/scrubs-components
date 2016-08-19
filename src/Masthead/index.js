@@ -21,7 +21,7 @@ const Masthead = (props: PropsType) : React.Element<any> => {
 }
 
 const mastheadClasses = (): string => {
-  return classnames( py3, mb3, center )
+  return classnames(py3, mb3, center)
 }
 
 export default Masthead

@@ -19,7 +19,7 @@ const Page = (props: PropsType) : React.Element<any> => {
 }
 
 const pageClasses = (): string => {
-  return classnames( p3 )
+  return classnames(p3)
 }
 
 export default Page

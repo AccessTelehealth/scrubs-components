@@ -19,7 +19,7 @@ type PropsType = {
   italicised?: bool,
   lineHeight?: 'small' | 'large' ,
   colour?: 'blue' | 'red' | 'white' | 'grey' | 'greyDark',
-  greyDarkOnSiblingInputFocus?: bool,
+  inputFocusColour?: bool,
   tag?: 'h1' | 'h2' | 'h3'
 }
 
@@ -52,7 +52,7 @@ const textClasses = (props: PropsType): string => {
       [textWhite]: props.colour === 'white',
       [textGrey]: props.colour === 'grey',
       [textGreyDark]: props.colour === 'greyDark',
-      [textGreyDarkOnSiblingInputFocus]: props.greyDarkOnSiblingInputFocus,
+      [textGreyDarkOnSiblingInputFocus]: props.inputFocusColour,
       [lineHeight2]: !props.lineHeight,
       [lineHeight1]: props.lineHeight === 'small',
       [lineHeight3]: props.lineHeight === 'large',

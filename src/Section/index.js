@@ -20,7 +20,7 @@ const Section = (props: PropsType) : React.Element<any> => {
 }
 
 const sectionClasses = (): string => {
-  return classnames( pb2 )
+  return classnames(pb2)
 }
 
 export default Section

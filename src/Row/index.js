@@ -20,7 +20,7 @@ const Row = (props: PropsType) : React.Element<any> => {
 }
 
 const rowClasses = (): string => {
-  return classnames( overflowNone )
+  return classnames(overflowNone)
 }
 
 export default Row

@@ -8,8 +8,8 @@ import { Item, Text, Row } from '../'
 const Example = (): React.Element<*> => {
   return (
     <Item border>
-      <Row><Text small bold>Amoxicillin</Text></Row>
-      <Row><Text small>5mg capsule</Text></Row>
+      <Row><Text size={'small'} bold>Amoxicillin</Text></Row>
+      <Row><Text size={'small'}>5mg capsule</Text></Row>
     </Item>
   )
 }

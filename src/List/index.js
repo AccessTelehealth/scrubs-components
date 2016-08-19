@@ -19,7 +19,7 @@ const List = (props: PropsType) : React.Element<any> => {
 }
 
 const listClasses = (): string => {
-  return classnames( my1 )
+  return classnames(my1)
 }
 
 export default List

@@ -22,7 +22,7 @@ const Link = (props: PropsType) : React.Element<any> => {
 }
 
 const linkClasses = (): string => {
-  return classnames( inline )
+  return classnames(inline)
 }
 
 export default Link

@@ -66,8 +66,7 @@ class Field extends React.Component {
 }
 
 const fieldClasses = (): string => {
-  return classnames( mb2 )
+  return classnames(mb2)
 }
-
 
 export default Field

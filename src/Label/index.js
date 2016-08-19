@@ -22,7 +22,7 @@ const Label = (props: PropsType): React.Element<any> => {
 }
 
 const labelClasses = (): string => {
-  return classnames( mb1, block )
+  return classnames(mb1, block)
 }
 
 export default Label
