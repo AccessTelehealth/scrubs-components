@@ -3,36 +3,37 @@
 import React from 'react'
 import { Router, Route, browserHistory } from 'react-router'
 import ReactDOM from 'react-dom'
-// import defaults from 'traits/defaults.css'
 import * as components from './components'
 import Home from './Home'
+import { lowerCaseToCamelCase } from 'scrubs-libs'
 import {
-  View, Section, Page, Row, Text, Item, List, Topbar, Title, Heading,
+  View, Section, Page, Text, Item, List, Topbar, Title, Heading,
 } from '../src/'
 
 class Wrapper extends React.Component {
-
   render() {
     const active = this.props.routeParams.component
-    const activeComponent = components[lowerCaseToCamelCase(active)]
+    const lowerCaseActive = lowerCaseToCamelCase(active)
+    const activeComponent = components[lowerCaseActive]
+    const { Example, documentation } = activeComponent
     return (
       <View>
         <Topbar>
-          <Title>{lowerCaseToCamelCase(active)}</Title>
+          <Title>{lowerCaseActive}</Title>
         </Topbar>
         <Page>
           <Section>
             <Heading>Example</Heading>
-            <Row>{activeComponent.example}</Row>
+            <Example />
           </Section>
           <Section>
             <Heading>Description</Heading>
-            <Text>{activeComponent.documentation.description}</Text>
+            <Text>{documentation.description}</Text>
           </Section>
           <Section>
             <Heading>Props</Heading>
               <List>
-                {renderProps(activeComponent.documentation.props)}
+                {renderProps(documentation.props)}
               </List>
           </Section>
         </Page>
@@ -41,16 +42,9 @@ class Wrapper extends React.Component {
   }
 }
 
-const lowerCaseToCamelCase = (string: string): string => {
-  return string.replace(/([a-z])([a-z]*)-?([a-z])?([a-z]*)?/g,
-  (match, p1, p2, p3, p4) => {
-    return `${p1.toUpperCase()}${p2}${p3 && p3.toUpperCase() || ''}${p4 || ''}`
-  })
-}
-
 const renderProps = (props: Object): Array<React.Element<any>> => {
   return Object.keys(props).map((key: string, index: number): React.Element<any> => {
-    const prop: ComponentPropsType = props[key]
+    const prop = props[key]
     return (
       <Item key={index}>
         <Text small blue bold>{key}</Text>

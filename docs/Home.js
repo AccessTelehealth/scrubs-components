@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router'
 import * as components from './components'
+import { camelCaseToLowerCase, } from 'scrubs-libs'
+
 import {
   View, Topbar, Title, Action, Page,  Row, Text, Item, Grid,
 } from '../src/'
@@ -20,10 +22,10 @@ export default class Home extends React.Component {
               <Item border={true}>
                 <Link to={`/components/${camelCaseToLowerCase(name)}`}>
                   <Row>
-                    <Grid cols={11} align='middle' padding={{left: 'large'}}>
+                    <Grid cols={10} align='middle'>
                       <Text large>{name}</Text>
                     </Grid>
-                    <Grid cols={1} align='middle' padding={{right: 'small'}}>
+                    <Grid cols={2} align='middle' textAlign='right'>
                       <Action icon="arrowRight" iconSide="right">View</Action>
                     </Grid>
                   </Row>
@@ -36,8 +38,4 @@ export default class Home extends React.Component {
       </View>
     )
   }
-}
-
-const camelCaseToLowerCase = (string: string): string => {
-  return string.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase()
 }

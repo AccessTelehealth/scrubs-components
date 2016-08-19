@@ -13,38 +13,40 @@ const data = {
 
 const { avatar, name, link, diagnosis, documents, date } = data
 
-const example: React.Element<any> = (
-  <Item border={true}>
-    <Row>
-      <Grid cols={2} align='middle'>
-        <Avatar url={avatar} fill />
-      </Grid>
-      <Grid cols={10} align='middle' padding={{left: 'medium'}}>
-        <Row>
-          <Grid cols={9} align='middle'>
-            <Text small bold>{name}</Text>
-          </Grid>
-          <Grid cols={3} align='middle' textAlign='right'>
-            <Action icon='arrowRight' iconSide='right' to={link}>
-              View
-            </Action>
-          </Grid>
-        </Row>
-        <Row>
-          <Text small>{diagnosis}</Text>
-        </Row>
-        <Row>
-          <Grid cols={7} align='middle'>
-            <Text small blue>{documents.length} Document{documents.length !== 1 && 's'}</Text>
-          </Grid>
-          <Grid cols={5} align='middle' textAlign='right'>
-            <Text small>{date}</Text>
-          </Grid>
-        </Row>
-      </Grid>
-    </Row>
-  </Item>
-)
+const Example = (): React.Element<*> => {
+  return (
+    <Item border={true}>
+      <Row>
+        <Grid cols={2} align='middle'>
+          <Avatar url={avatar} fill />
+        </Grid>
+        <Grid cols={10} align='middle' padding={{left: 'medium'}}>
+          <Row>
+            <Grid cols={9} align='middle'>
+              <Text small bold>{name}</Text>
+            </Grid>
+            <Grid cols={3} align='middle' textAlign='right'>
+              <Action icon='arrowRight' iconSide='right' to={link}>
+                View
+              </Action>
+            </Grid>
+          </Row>
+          <Row>
+            <Text small>{diagnosis}</Text>
+          </Row>
+          <Row>
+            <Grid cols={7} align='middle'>
+              <Text small blue>{documents.length} Document{documents.length !== 1 && 's'}</Text>
+            </Grid>
+            <Grid cols={5} align='middle' textAlign='right'>
+              <Text small>{date}</Text>
+            </Grid>
+          </Row>
+        </Grid>
+      </Row>
+    </Item>
+  )
+}
 
 const documentation: Object = parse(GridString)
-export default { example, documentation }
+export default { Example, documentation }

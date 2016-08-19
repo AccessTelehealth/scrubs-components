@@ -3,8 +3,8 @@
 import React from 'react'
 import FieldString from '!raw!..//Field'
 import { parse } from 'react-docgen'
-import { Field, } from '../'
-import { getFieldById, } from 'scrubs-libs'
+import { Field } from '../'
+import { getFieldById } from 'scrubs-libs'
 
 type ValueType = string
 
@@ -17,7 +17,7 @@ type FieldType = {
   validateField: (id: string, fields: Array<any>) => string | true,
 }
 
-class example extends React.Component {
+class Example extends React.Component {
   state: {
     fields: Array<FieldType>
   }
@@ -39,7 +39,7 @@ class example extends React.Component {
             return true
           }
         },
-      },]
+      }],
     }
   }
 
@@ -48,7 +48,7 @@ class example extends React.Component {
       fields: [{
         ...this.state.fields[0],
         ...values,
-      },]
+      }],
     })
   }
 
@@ -64,4 +64,4 @@ class example extends React.Component {
 }
 
 const documentation: Object = parse(FieldString)
-export default { example, documentation, }
+export default { Example, documentation }
