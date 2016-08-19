@@ -47,12 +47,12 @@ const renderProps = (props: Object): Array<React.Element<any>> => {
     const prop = props[key]
     return (
       <Item key={index}>
-        <Text size={'small'} colour={'blue'} bold>{key}</Text>
+        <Text size='small' colour='blue' bold>{key}</Text>
         <div>
-          <Text size={'small'} >required:</Text> <Text size={'small'} bold>{prop.required ? 'true' : 'false'}</Text>
+          <Text size='small' >required:</Text> <Text size='small' bold>{prop.required ? 'true' : 'false'}</Text>
         </div>
         <div>
-          <Text size={'small'} >type:</Text> <Text size={'small'} bold>{prop.flowType && prop.flowType.name}</Text>
+          <Text size='small' >type:</Text> <Text size='small' bold>{prop.flowType && prop.flowType.name}</Text>
         </div>
       </Item>
     )

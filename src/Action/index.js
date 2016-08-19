@@ -32,7 +32,7 @@ const Action = (props: PropsType): React.Element<any> => {
   return (
     <span className={styles.Action}>
       {props.icon && props.iconSide !== 'right' && renderIcon(props)}
-      <Grid align='middle'><Text size={'small'} colour={'blue'} bold>{ props.children }</Text></Grid>
+      <Grid align='middle'><Text size='small' colour='blue' bold>{ props.children }</Text></Grid>
       {props.icon && props.iconSide === 'right' && renderIcon(props)}
     </span>
   )

@@ -14,7 +14,7 @@ type PropsType = {
 const Heading = (props: PropsType) : React.Element<any> => {
   return (
     <div className={headingClasses()}>
-      <Text colour={'blue'} tag="h3" >
+      <Text colour='blue' tag="h3" >
         {props.children}
       </Text>
     </div>

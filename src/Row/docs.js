@@ -8,8 +8,8 @@ import { Row, Text } from '../'
 const Example = (): React.Element<*> => {
   return (
     <Row>
-      <Text size={'small'}>Last prescribed</Text>
-      <Text size={'small'}>April 28 2016</Text>
+      <Text size='small'>Last prescribed</Text>
+      <Text size='small'>April 28 2016</Text>
     </Row>
   )
 }

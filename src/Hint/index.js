@@ -15,9 +15,9 @@ type PropsType = {
 const Hint = (props: PropsType): React.Element<any> => {
   const { text, error, } = props
   if (error) {
-    return <Text size={'small'} colour={'red'} inputFocusColour>{text}</Text>
+    return <Text size='small' colour='red' inputFocusColour>{text}</Text>
   } else {
-    return <Text size={'small'} colour={'greyDark'}>{text}</Text>
+    return <Text size='small' colour='greyDark'>{text}</Text>
   }
 }
 
