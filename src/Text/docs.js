@@ -13,7 +13,7 @@ const Example = (): React.Element<*> => {
       </Row>
       <Row>
         <Text>Here is some
-          <Text lineHeight={'large'} italicised>dark blue italic text, with a smidge more space</Text>.
+          <Text lineHeight={'large'} italicised> dark blue italic text, with a smidge more space</Text>.
         </Text>
       </Row>
       <Row>
