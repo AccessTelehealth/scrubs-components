@@ -66,7 +66,7 @@ const renderProps = (props: Object): Array<React.Element<any>> => {
 }
 
 ReactDOM.render(
-  <Router history={browserHistory}>
+  <Router>
     <Route path="/" component={Home}/>
     <Route path="/components/:component" component={Wrapper}/>
   </Router>,
