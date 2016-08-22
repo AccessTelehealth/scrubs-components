@@ -26,7 +26,7 @@ type PropsType = {
   icon: IconType,
   fill?: 'blue' | 'red' | 'white' | 'grey' | 'greyDark' | 'green' | 'offWhite'
    | 'transparent',
-  size?: 'small' | 'large'
+  size?: 'small' | 'medium' | 'large'
 }
 
 /** Icons are SVG images with fill colours and sizes */
@@ -106,11 +106,11 @@ const renderIcon = (props: PropsType) => {
 const iconClasses = (props: PropsType): string => {
   return classnames(
     {
-      [iconMedium]: !props.size,
-      [iconSmall]: props.size === 'small',
+      [iconSmall]: !props.size || props.size === 'small',
+      [iconMedium]: props.size === 'medium',
       [iconLarge]: props.size === 'large',
-      [fillBlueDark]: !props.fill,
-      [fillBlue]: props.fill === 'blue',
+      [fillBlue]: !props.fill,
+      [fillBlueDark]: props.fill === 'blueDark',
       [fillRed]: props.fill === 'red',
       [fillWhite]: props.fill === 'white',
       [fillGrey]: props.fill === 'grey',

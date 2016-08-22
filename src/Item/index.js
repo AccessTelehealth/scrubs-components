@@ -8,7 +8,7 @@ import { borderGrey } from 'traits/colours.css'
 
 
 type PropsType = {
-  children?:React.Element<any>,
+  children?: React.Element<any>,
   borderTop?: boolean,
   borderBottom?: boolean
 }
