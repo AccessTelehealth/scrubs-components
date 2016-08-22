@@ -8,7 +8,7 @@ import { Link, Text } from '../'
 const Example = (): React.Element<*> => {
   return (
     <Link>
-      <Text blue>Read our Documentation</Text>
+      <Text colour='blue'>Read our Documentation</Text>
     </Link>
   )
 }

@@ -1,20 +1,25 @@
 /* @flow */
 
 import React from 'react'
-import styles from './index.css'
+import { my1 } from 'traits/margin.css'
+import classnames from 'classnames'
 
 type PropsType = {
-  children?:React.Element<any>,
+  children?: React.Element<any>,
 }
 
 /** List for items */
 
 const List = (props: PropsType) : React.Element<any> => {
   return (
-    <div className={styles.List}>
+    <div className={listClasses()}>
       {props.children}
     </div>
   )
+}
+
+const listClasses = (): string => {
+  return classnames(my1)
 }
 
 export default List

@@ -1,7 +1,10 @@
 /* @flow */
 
 import React from 'react'
-import styles from './index.css'
+import { py3 } from 'traits/padding.css'
+import { mb3 } from 'traits/margin.css'
+import { center } from 'traits/typography.css'
+import classnames from 'classnames'
 
 type PropsType = {
   children?:React.Element<any>,
@@ -11,10 +14,14 @@ type PropsType = {
 
 const Masthead = (props: PropsType) : React.Element<any> => {
   return (
-    <div className={styles.Masthead}>
+    <div className={mastheadClasses()}>
       {props.children}
     </div>
   )
+}
+
+const mastheadClasses = (): string => {
+  return classnames(py3, mb3, center)
 }
 
 export default Masthead
