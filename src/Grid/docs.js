@@ -23,7 +23,7 @@ const Example = (): React.Element<*> => {
         <Grid cols={10} align='middle' padding={{left: 'medium'}}>
           <Row>
             <Grid cols={9} align='middle'>
-              <Text small bold>{name}</Text>
+              <Text size='small' bold>{name}</Text>
             </Grid>
             <Grid cols={3} align='middle' textAlign='right'>
               <Action icon='arrowRight' iconSide='right' to={link}>
@@ -32,14 +32,14 @@ const Example = (): React.Element<*> => {
             </Grid>
           </Row>
           <Row>
-            <Text small>{diagnosis}</Text>
+            <Text size='small'>{diagnosis}</Text>
           </Row>
           <Row>
             <Grid cols={7} align='middle'>
-              <Text small blue>{documents.length} Document{documents.length !== 1 && 's'}</Text>
+              <Text size='small' colour='blue'>{documents.length} Document{documents.length !== 1 && 's'}</Text>
             </Grid>
             <Grid cols={5} align='middle' textAlign='right'>
-              <Text small>{date}</Text>
+              <Text size='small'>{date}</Text>
             </Grid>
           </Row>
         </Grid>

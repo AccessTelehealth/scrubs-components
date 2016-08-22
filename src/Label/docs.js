@@ -6,7 +6,7 @@ import { parse } from 'react-docgen'
 import { Label } from '../'
 
 const Example = (): React.Element<*> => {
-  return <Label text={'I am a label'} />
+  return <Label text='I am a label' />
 
 }
 

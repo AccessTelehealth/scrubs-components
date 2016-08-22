@@ -10,4 +10,5 @@ const Example = (): React.Element<*> => {
 }
 
 const documentation: Object = parse(AvatarString)
+
 export default { Example, documentation }

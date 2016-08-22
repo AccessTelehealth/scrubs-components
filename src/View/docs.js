@@ -33,7 +33,7 @@ const Example = (): React.Element<*> => {
             <Item>
               <Row>
                 <Grid cols={9} align='middle'>
-                  <Text small bold>Amoxycillin</Text>
+                  <Text size='small' bold>Amoxycillin</Text>
                 </Grid>
                 <Grid cols={3} align='middle' textAlign='right'>
                   <Action icon='arrowRight' iconSide='right'>View</Action>
@@ -43,7 +43,7 @@ const Example = (): React.Element<*> => {
             <Item>
               <Row>
                 <Grid cols={9} align='middle'>
-                  <Text small bold>Medical Certificate</Text>
+                  <Text size='small' bold>Medical Certificate</Text>
                 </Grid>
                 <Grid cols={3} align='middle' textAlign='right'>
                   <Action icon='arrowRight' iconSide='right'>View</Action>

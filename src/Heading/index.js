@@ -1,7 +1,8 @@
 /* @flow */
 
 import React from 'react'
-import styles from './index.css'
+import { mb1 } from 'traits/margin.css';
+import classnames from 'classnames'
 import Text from '../Text'
 
 type PropsType = {
@@ -12,12 +13,18 @@ type PropsType = {
 
 const Heading = (props: PropsType) : React.Element<any> => {
   return (
-    <div className={styles.Heading}>
-      <Text tag="h3" blue>
+    <div className={headingClasses()}>
+      <Text colour='blue' tag="h3" >
         {props.children}
       </Text>
     </div>
   )
 }
+
+
+const headingClasses = (): string => {
+  return classnames(mb1)
+}
+
 
 export default Heading

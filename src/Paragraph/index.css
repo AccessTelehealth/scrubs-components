@@ -1,8 +1,0 @@
-.Paragraph {
-  composes: mb2 from 'traits/margin.css';
-}
-
-.ParagraphCentered {
-  composes: Paragraph;
-  composes: center from 'traits/typography.css';
-}

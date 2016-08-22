@@ -1,7 +1,0 @@
-.PrimaryButton {
-  composes: fillWidth from 'traits/layout.css';
-  composes: bgBlue borderBlueDark from 'traits/colours.css';
-  composes: rounded borderBottom from 'traits/borders.css';
-  composes: p3 from 'traits/padding.css';
-  composes: mt3 from 'traits/margin.css';
-}

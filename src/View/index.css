@@ -1,8 +1,0 @@
-.View {
-  composes: fillHeight from 'traits/layout.css';
-}
-
-.ViewPadTop {
-  composes: View;
-  composes: ptBar from 'traits/padding.css';
-}

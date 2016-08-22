@@ -1,7 +1,12 @@
 /* @flow */
 
 import React from 'react'
-import styles from './index.css'
+import classnames from 'classnames'
+import { fillHeight } from 'traits/layout.css'
+import { ptBar } from 'traits/padding.css'
+
+
+
 
 type PropsType = {
   children?: React.Element<any>,
@@ -11,12 +16,19 @@ type PropsType = {
 /** Wrapper for all routes or unique views */
 
 const View = (props: PropsType) => {
-  const { children, padTop } = props
-  const className = padTop ? styles.ViewPadTop : styles.View
+  const { children } = props
   return (
-    <div className={className}>
+    <div className={viewClasses(props)}>
       {children}
     </div>
+  )
+}
+
+const viewClasses = (props: PropsType): string => {
+  return classnames(
+    fillHeight, {
+      [ptBar]: props.padTop,
+    }
   )
 }
 
