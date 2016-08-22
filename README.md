@@ -16,7 +16,7 @@ npm start
 
 To create a new component:
 - Create a new folder in `src` with an `index.js` file and a `docs.js` file.
-- If the component has styling, add a `index.css` file in the same folder.
+- If the component has styling, add a componentClasses() function in the same file.
 - Create a new named export in `src/index.js`:
 ```
 export { default as NewComponent } from './NewComponent'
@@ -25,7 +25,7 @@ export { default as NewComponent } from './NewComponent'
 ```
 export { default as NewComponent } from '../NewComponent/docs'
 ```
-- You should see your example component at [http://localhost:8080/newcomponent](http://localhost:8080/newcomponent)
+- You should see your example component at [http://localhost:5555/newcomponent](http://localhost:5555/newcomponent)
 
 ## Setting up scrubs-components in a project
 To get the most out of scrubs-components, including flow type annotations and theming, it is encouraged that you use webpack with the babel loader and css modules. Be sure the `scrubs-components` module is not excluded with other `node_modules` when defining which files babel loads. Check the `example.webpack.config.js` and `.babelrc` as a starting point.
