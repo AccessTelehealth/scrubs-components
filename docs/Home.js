@@ -19,7 +19,7 @@ export default class Home extends React.Component {
       <Page>
           {Object.keys(components).map((name) => {
             return (
-              <Item border={true}>
+              <Item borderTop={true}>
                 <Link to={`/components/${camelCaseToLowerCase(name)}`}>
                   <Row>
                     <Grid cols={10} align='middle'>
