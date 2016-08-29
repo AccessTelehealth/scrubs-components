@@ -5,7 +5,7 @@ import Text from '../Text'
 import classnames from 'classnames'
 import { fillWidth } from 'traits/layout.css'
 import { bgBlue, borderBlueDark } from 'traits/colours.css'
-import { rounded, borderBottom } from 'traits/borders.css'
+import { rounded, borderSmallBottom } from 'traits/borders.css'
 import { p3 } from 'traits/padding.css'
 import { mt3 } from 'traits/margin.css'
 
@@ -26,7 +26,7 @@ const PrimaryButton = (props: PropsType) : React.Element<any> => {
 const primaryButtonClasses = (): string => {
   return classnames(
       fillWidth, bgBlue, borderBlueDark,
-      rounded, borderBottom, p3, mt3
+      rounded, borderSmallBottom, p3, mt3
   )
 }
 

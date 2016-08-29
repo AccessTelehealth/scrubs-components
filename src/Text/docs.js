@@ -23,7 +23,7 @@ const Example = (): React.Element<*> => {
       </Row>
       <Row>
         <Text>When we're being subtle we use
-          <Text size='small' colour='greyDark'> small grey</Text>.
+          <Text size='h5' colour='greyDark'> small grey</Text>.
         </Text>
       </Row>
     </Section>

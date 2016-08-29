@@ -18,7 +18,7 @@ const Paragraph = (props: PropsType) : React.Element<any> => {
   const { children } = props
   return (
     <p className={paragraphClasses(props)}>
-      <Text>{children}</Text>
+      <Text size='h3'>{children}</Text>
     </p>
   )
 }

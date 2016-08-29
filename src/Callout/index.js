@@ -2,7 +2,7 @@
 
 import React from 'react'
 import classnames from 'classnames'
-import { border, rounded } from 'traits/borders.css'
+import { borderSmall, rounded } from 'traits/borders.css'
 import { p3 } from 'traits/padding.css'
 import { mb3 } from 'traits/margin.css'
 import { borderGrey } from 'traits/colours.css'
@@ -22,7 +22,7 @@ const Callout = (props: PropsType): React.Element<any> => {
 }
 
 const calloutClasses = (): string => {
-  return classnames(border, rounded, p3, mb3, borderGrey)
+  return classnames(borderSmall, rounded, p3, mb3, borderGrey)
 }
 
 export default Callout

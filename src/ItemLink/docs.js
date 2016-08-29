@@ -9,11 +9,11 @@ const Example = (): React.Element<*> => {
   return (
     <ItemLink>
       <Row>
-        <Text size='small' bold>Amoxicillin</Text>
+        <Text size='h5' bold>Amoxicillin</Text>
         <Action icon="arrowRight" iconSide="right">View</Action>
       </Row>
       <Row>
-        <Text size='small'>5mg capsule</Text>
+        <Text size='h5'>5mg capsule</Text>
       </Row>
     </ItemLink>
   )

@@ -36,7 +36,7 @@ const Action = (props: PropsType): React.Element<any> => {
       <Grid align='middle'>
         {props.icon && props.iconSide !== 'right' && <Icon icon={props.icon}/>}
       </Grid>
-      <Grid><Text size='small' colour='blue' bold>{ props.children }</Text></Grid>
+      <Grid><Text size='h5' colour='blue' bold>{ props.children }</Text></Grid>
       <Grid align='middle'>
         {props.icon && props.iconSide == 'right' && <Icon icon={props.icon}/>}
       </Grid>

@@ -3,7 +3,7 @@
 import React from 'react'
 import classnames from 'classnames'
 import { py2 } from 'traits/padding.css'
-import { borderTop, borderBottom } from 'traits/borders.css'
+import { borderSmallTop, borderSmallBottom } from 'traits/borders.css'
 import { borderGrey } from 'traits/colours.css'
 
 
@@ -26,8 +26,8 @@ const Item = (props: PropsType) : React.Element<any> => {
 const itemClasses = (props: PropsType): string => {
   return classnames(
     py2, {
-      [borderBottom]: props.borderBottom,
-      [borderTop]: props.borderTop,
+      [borderSmallBottom]: props.borderBottom,
+      [borderSmallTop]: props.borderTop,
       [borderGrey]: props.borderTop || props.borderBottom,
     }
   )

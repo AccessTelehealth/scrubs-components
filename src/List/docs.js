@@ -9,12 +9,12 @@ const Example = (): React.Element<*> => {
   return (
     <List>
       <Item>
-        <Row><Text size='small' bold>Amoxicillin</Text></Row>
-        <Row><Text size='small'>5mg capsule</Text></Row>
+        <Row><Text size='h5' bold>Amoxicillin</Text></Row>
+        <Row><Text size='h5'>5mg capsule</Text></Row>
       </Item>
       <Item>
-        <Row><Text size='small' bold>Amoxicillin</Text></Row>
-        <Row><Text size='small'>25mg capsule</Text></Row>
+        <Row><Text size='h5' bold>Amoxicillin</Text></Row>
+        <Row><Text size='h5'>25mg capsule</Text></Row>
       </Item>
     </List>
   )

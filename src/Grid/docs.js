@@ -18,12 +18,12 @@ const Example = (): React.Element<*> => {
     <Item border={true}>
       <Row>
         <Grid cols={2} align='middle'>
-          <Avatar url={avatar} fill />
+          <Avatar backgroundImageURL={avatar} fill />
         </Grid>
         <Grid cols={10} align='middle' padding={{left: 'medium'}}>
           <Row>
             <Grid cols={9} align='middle'>
-              <Text size='small' bold>{name}</Text>
+              <Text size='h5' bold>{name}</Text>
             </Grid>
             <Grid cols={3} align='middle' textAlign='right'>
               <Action icon='arrowRight' iconSide='right' to={link}>
@@ -32,14 +32,14 @@ const Example = (): React.Element<*> => {
             </Grid>
           </Row>
           <Row>
-            <Text size='small'>{diagnosis}</Text>
+            <Text size='h5'>{diagnosis}</Text>
           </Row>
           <Row>
             <Grid cols={7} align='middle'>
-              <Text size='small' colour='blue'>{documents.length} Document{documents.length !== 1 && 's'}</Text>
+              <Text size='h5' colour='blue'>{documents.length} Document{documents.length !== 1 && 's'}</Text>
             </Grid>
             <Grid cols={5} align='middle' textAlign='right'>
-              <Text size='small'>{date}</Text>
+              <Text size='h5'>{date}</Text>
             </Grid>
           </Row>
         </Grid>

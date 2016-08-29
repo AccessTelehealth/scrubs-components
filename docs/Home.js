@@ -23,7 +23,7 @@ export default class Home extends React.Component {
                 <Link to={`/components/${camelCaseToLowerCase(name)}`}>
                   <Row>
                     <Grid cols={10} align='middle'>
-                      <Text large>{name}</Text>
+                      <Text size='h2'>{name}</Text>
                     </Grid>
                     <Grid cols={2} align='middle' textAlign='right'>
                       <Action icon="arrowRight" iconSide="right">View</Action>

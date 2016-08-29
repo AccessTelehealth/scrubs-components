@@ -2,7 +2,7 @@
 
 import React from 'react'
 import classnames from 'classnames'
-import { border, rounded } from 'traits/borders.css'
+import { borderSmall, rounded } from 'traits/borders.css'
 import { textBlueDark, bgGrey, textBlueOnFocus, borderBlueOnFocus, borderGrey, borderRed } from 'traits/colours.css'
 import { h2, regular, sans, antialiased } from 'traits/typography.css'
 import { fillWidth } from 'traits/layout.css'
@@ -36,7 +36,7 @@ const Input = (props: PropsType): React.Element<any> => {
 
 const inputClasses = (props: PropsType): string => {
   return classnames(
-    border, rounded, textBlueDark, bgGrey, textBlueOnFocus, borderBlueOnFocus,
+    borderSmall, rounded, textBlueDark, bgGrey, textBlueOnFocus, borderBlueOnFocus,
     h2, regular, sans, antialiased, fillWidth, p2, mb1,
     {
       [borderGrey]: props.valid,
