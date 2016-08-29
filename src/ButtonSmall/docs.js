@@ -16,7 +16,6 @@ const Example = (): React.Element<*> => {
           </ButtonSmall>
         </Grid>
       </Row>
-      <Text colour="white" >It's the best!</Text>
     </View>
   )
 }
