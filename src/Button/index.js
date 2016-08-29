@@ -11,7 +11,7 @@ import { rounded, borderSmall, borderLarge } from 'traits/borders.css'
 import { px3, px4, py1, py2 } from 'traits/padding.css'
 import { mt3 } from 'traits/margin.css'
 import { inlineBlock } from 'traits/layout.css'
-import { h1, h2, h3, h4, h5, caps } from 'traits/typography.css'
+import { h1, h2, h3, h4, h5, caps, bold, letterSpacing } from 'traits/typography.css'
 
 
 type PropsType = {
@@ -29,14 +29,14 @@ type PropsType = {
 const Button = (props: PropsType) : React.Element<any> => {
   return (
     <button className={ButtonClasses(props)}>
-      <Text colour={props.textColour} size={props.fontSize}>{props.children}</Text>
+      <Text colour={props.textColour} size={props.fontSize} bold>{props.children}</Text>
     </button>
   )
 }
 
 const ButtonClasses = (props: PropsType): string => {
   return classnames(
-    rounded, caps, inlineBlock,
+    rounded, caps, inlineBlock, bold, letterSpacing,
     {
       [px4]: props.padding === 'large',
       [py2]: props.padding === 'large',

@@ -18,7 +18,7 @@ const Example = (): React.Element<*> => {
       </Row>
       <Row>
         <Text>When we're angry we use
-          <Text bold size='large' colour='red'> large red and bold</Text>.
+          <Text bold size='h2' colour='red'> large red and bold</Text>.
         </Text>
       </Row>
       <Row>
