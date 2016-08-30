@@ -48,13 +48,13 @@ const Example = (): React.Element<*> => {
       </Item>
       <Item>
         <Row>
-          <Grid cols={4} borderBottom padding={{bottom: 'small'}} textAlign='center' align='middle'>
+          <Grid cols={4} borderBottom padding={{bottom: 'medium'}} textAlign='center' align='middle'>
             <Text size='h5' colour="blue">Patient</Text>
           </Grid>
-          <Grid cols={4} borderBottom padding={{bottom: 'small'}} borderLeft textAlign='center' align='middle'>
+          <Grid cols={4} borderBottom padding={{bottom: 'medium'}} borderLeft textAlign='center' align='middle'>
             <Text size='h5' colour="greyDark">Consultation</Text>
           </Grid>
-          <Grid cols={4} borderBottom padding={{bottom: 'small'}} borderLeft textAlign='center' align='middle'>
+          <Grid cols={4} borderBottom padding={{bottom: 'medium'}} borderLeft textAlign='center' align='middle'>
             <Text size='h5' colour="greyDark">Summary</Text>
           </Grid>
         </Row>

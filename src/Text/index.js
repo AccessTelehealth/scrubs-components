@@ -4,7 +4,7 @@ import React from 'react'
 import classnames from 'classnames'
 import {
   sans, antialiased, h1, h2, h3, h4, h5, bold, regular, italic, lineHeight1,
-  lineHeight2, lineHeight3,
+  lineHeight2, lineHeight3, caps,
 } from 'traits/typography.css'
 import {
   textBlueDark, textBlue, textRed, textGreyDark, textGrey, textWhite,
@@ -17,6 +17,7 @@ type PropsType = {
   size?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5',
   bold?: bool,
   italicised?: bool,
+  uppercase?: bool,
   lineHeight?: 'small' | 'large' ,
   colour?: 'blue' | 'red' | 'white' | 'grey' | 'greyDark',
   inputFocusColour?: bool,
@@ -48,6 +49,7 @@ const textClasses = (props: PropsType): string => {
       [regular]: !props.bold,
       [bold]: props.bold,
       [italic]: props.italicised,
+      [caps]: props.uppercase,
       [textBlueDark]: !props.colour,
       [textBlue]: props.colour === 'blue',
       [textRed]: props.colour === 'red',

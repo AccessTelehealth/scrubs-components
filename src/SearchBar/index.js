@@ -22,6 +22,7 @@ const SearchBar = (props: PropsType) : React.Element<any> => {
         valid={true}
         inputType='search'
         textColour='greyDark'
+        pill
       />
     </div>
   )

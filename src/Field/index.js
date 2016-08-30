@@ -57,7 +57,7 @@ class Field extends React.Component {
           value={value}
           placeholder={placeholder}
           valid={!fieldHasError}
-          onChange={this.onInputChange.bind(this)}
+          onChange={this.onInputChange.bind(this)}          
         />
         {hintText && <Hint text={hintText} error={fieldHasError} />}
       </div>
