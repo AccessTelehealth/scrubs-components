@@ -9,7 +9,7 @@ import borders from '../styles/borders'
 
 const Base = (props: PropsType): React.Element<*> => {
   const {
-    component, tagName,
+    component, tagName, size, style,
     verticalAlign, display, overflow, clearfix, float, width, height, boxSizing,
     margin, marginTop, marginBottom, marginLeft, marginRight, marginX, marginY,
     padding, paddingTop, paddingBottom, paddingLeft, paddingRight, paddingX, paddingY,
@@ -43,8 +43,12 @@ const Base = (props: PropsType): React.Element<*> => {
       rounded, roundedTop, roundedBottom, roundedLeft, roundedRight, circle,
     }),
   )
+  const styles = {
+    width: `${size * 100}%`,
+    ...styles,
+  }
   return (
-    <Component {...componentProps} className={className} />
+    <Component className={className} style={styles} {...componentProps} />
   )
 }
 export default Base

@@ -3,7 +3,7 @@ import Base from './Base'
 
 const Field = (props) => {
   return (
-    <Base paddingBottom={2} {...props} />
+    <Base paddingBottom={3} {...props} />
   )
 }
 

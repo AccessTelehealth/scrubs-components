@@ -3,7 +3,7 @@ import Base from './Base'
 
 const Page = (props) => {
   return (
-    <Base padding={3} height='fill' {...props} />
+    <Base padding={3} {...props} />
   )
 }
 

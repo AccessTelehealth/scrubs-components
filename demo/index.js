@@ -10,29 +10,33 @@ import Text from '../components/Text'
 import Field from '../components/Field'
 import Input from '../components/Input'
 import Label from '../components/Label'
+import Section from '../components/Section'
 import SmallButton from '../components/SmallButton'
 import LargeButton from '../components/LargeButton'
 
 ReactDOM.render(
   <View>
-    <Tab width={1/3} borderRight={1}>
+    <Tab size={1/3} borderRight={1}>
       <TabLabel active>Consultation</TabLabel>
     </Tab>
-    <Tab width={1/3} borderRight={1}>
+    <Tab size={1/3} borderRight={1}>
       <TabLabel>Patient History</TabLabel>
     </Tab>
-    <Tab width={1/3}>
+    <Tab size={1/3}>
       <TabLabel>Summary</TabLabel>
     </Tab>
     <Page>
-      <SmallButton>Select Pharmacy</SmallButton>
-      <SmallButton blue>Select Pharmacy</SmallButton>
-      <LargeButton>Accept Consultation</LargeButton>
-      <LargeButton blue>Accept Consultation</LargeButton>
       <Field>
         <Label>Input Label</Label>
-        <Input />
+        <Input placeholder='Something' />
       </Field>
+      <Field>
+        <Label>Input Label</Label>
+        <Input placeholder='Something' />
+      </Field>
+      <Section paddingTop={2} paddingX={4} textAlign='center'>
+        <LargeButton blue width='fill'>Submit Form</LargeButton>
+      </Section>
     </Page>
   </View>,
   document.getElementById('root')

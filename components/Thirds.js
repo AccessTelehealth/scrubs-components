@@ -3,7 +3,7 @@ import Grid from './Grid'
 
 const Thirds = (props) => {
   return (
-    <Grid width={1/3} {...props} />
+    <Grid size={1/3} {...props} />
   )
 }
 
