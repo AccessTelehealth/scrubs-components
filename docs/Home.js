@@ -13,7 +13,7 @@ export default class Home extends React.Component {
   render() {
     return (
       <View>
-        <Topbar>
+        <Topbar backgroundColour='grey'>
           <Title>Scrubs Components Examples</Title>
         </Topbar>
       <Page>

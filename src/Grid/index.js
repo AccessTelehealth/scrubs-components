@@ -1,8 +1,12 @@
 /* @flow */
 
 import React from 'react'
+import classnames from 'classnames'
 import styles from './index.css'
 import paddingStyles from 'traits/padding.css'
+import { borderSmallBottom, borderSmallLeft } from 'traits/borders.css'
+import { borderGrey } from 'traits/colours.css'
+
 
 type PaddingType = 'small'|'medium'|'large'
 
@@ -19,6 +23,9 @@ type PropsType = {
   align?: 'top'|'middle'|'bottom'|'baseline',
   textAlign?: 'right'|'left'|'center',
   padding?: PaddingObjectType,
+  borderBottom?: boolean,
+  borderLeft?: boolean,
+  borderRight?: boolean,
 }
 
 /** 12 column grid component for breaking up Rows */
@@ -30,7 +37,8 @@ const Grid = (props: PropsType): React.Element<any> => {
   const align = props.align ? capitaliseFirstLetter(props.align) : 'Normal'
   const textAlign = props.textAlign ? capitaliseFirstLetter(props.textAlign) : 'Normal'
   const paddingClasses = props.padding ? getPaddingClasses(props.padding) : ''
-  const className = `${styles[`Grid${align}${textAlign}`]} ${paddingClasses}`
+  const gridClasses = getGridClasses(props)
+  const className = `${styles[`Grid${align}${textAlign}`]} ${paddingClasses} ${gridClasses}`
   return (
     <div className={className} style={style}>
       {props.children}
@@ -60,6 +68,17 @@ function getPaddingWidth(padding: PaddingType): number {
   default:
     return 2
   }
+}
+
+
+const getGridClasses = (props: PropsType): string => {
+  return classnames(
+    {
+      [borderGrey]: props.borderLeft || props.borderRight || props.borderBottom,
+      [borderSmallLeft]: props.borderLeft,
+      [borderSmallBottom]: props.borderBottom,
+    }
+  )
 }
 
 export default Grid

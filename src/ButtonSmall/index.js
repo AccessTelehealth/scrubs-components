@@ -10,7 +10,7 @@ type PropsType = {
   borderColour?: 'blue' | 'red' | 'white' | 'grey' | 'greyDark' | 'green' | 'blueDark',
 }
 
-/** A Large Button with text colour, background colour and border colour options */
+/** A Small Button with text colour, background colour and border colour options */
 
 const ButtonSmall = (props: PropsType) : React.Element<any> => {
   return (

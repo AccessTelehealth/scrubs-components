@@ -5,6 +5,8 @@ import classnames from 'classnames'
 import { py2 } from 'traits/padding.css'
 import { borderSmallTop, borderSmallBottom } from 'traits/borders.css'
 import { borderGrey } from 'traits/colours.css'
+import { fillWidth } from 'traits/layout.css'
+
 
 
 type PropsType = {
@@ -25,7 +27,7 @@ const Item = (props: PropsType) : React.Element<any> => {
 
 const itemClasses = (props: PropsType): string => {
   return classnames(
-    py2, {
+    py2, fillWidth, {
       [borderSmallBottom]: props.borderBottom,
       [borderSmallTop]: props.borderTop,
       [borderGrey]: props.borderTop || props.borderBottom,

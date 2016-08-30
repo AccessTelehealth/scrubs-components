@@ -18,7 +18,7 @@ class Wrapper extends React.Component {
     const { Example, documentation } = activeComponent
     return (
       <View>
-        <Topbar>
+        <Topbar backgroundColour='grey'>
           <Title>{lowerCaseActive}</Title>
         </Topbar>
         <Page>

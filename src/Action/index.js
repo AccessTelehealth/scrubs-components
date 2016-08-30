@@ -34,11 +34,11 @@ const Action = (props: PropsType): React.Element<any> => {
   return (
     <span className={actionClasses(props)}>
       <Grid align='middle'>
-        {props.icon && props.iconSide !== 'right' && <Icon icon={props.icon}/>}
+        {props.icon && props.iconSide !== 'right' && <Icon size='small' icon={props.icon}/>}
       </Grid>
       <Grid><Text size='h5' colour='blue' bold>{ props.children }</Text></Grid>
       <Grid align='middle'>
-        {props.icon && props.iconSide == 'right' && <Icon icon={props.icon}/>}
+        {props.icon && props.iconSide == 'right' && <Icon size='small' icon={props.icon}/>}
       </Grid>
     </span>
   )
