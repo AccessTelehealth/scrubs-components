@@ -16,7 +16,7 @@ const Label = (props: PropsType): React.Element<any> => {
   const { text } = props
   return (
     <label className={labelClasses()}>
-      <Text small bold>{text}</Text>
+      <Text size='h5' bold uppercase colour='greyDark'>{text}</Text>
     </label>
   )
 }

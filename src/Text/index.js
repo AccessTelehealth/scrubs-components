@@ -3,8 +3,8 @@
 import React from 'react'
 import classnames from 'classnames'
 import {
-  sans, antialiased, h1, h2, h3, bold, regular, italic, lineHeight1,
-  lineHeight2, lineHeight3,
+  sans, antialiased, h1, h2, h3, h4, h5, bold, regular, italic, lineHeight1,
+  lineHeight2, lineHeight3, caps,
 } from 'traits/typography.css'
 import {
   textBlueDark, textBlue, textRed, textGreyDark, textGrey, textWhite,
@@ -14,13 +14,14 @@ import {
 
 type PropsType = {
   children?: React.Element<any>,
-  size?: 'small' | 'large',
+  size?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5',
   bold?: bool,
   italicised?: bool,
+  uppercase?: bool,
   lineHeight?: 'small' | 'large' ,
   colour?: 'blue' | 'red' | 'white' | 'grey' | 'greyDark',
   inputFocusColour?: bool,
-  tag?: 'h1' | 'h2' | 'h3'
+  tag?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5'
 }
 
 /** A wrapping component for all Text */
@@ -41,11 +42,14 @@ const textClasses = (props: PropsType): string => {
   return classnames(
     sans, antialiased, {
       [h2]: !props.size,
-      [h1]: props.size === 'large',
-      [h3]: props.size === 'small',
+      [h1]: props.size === 'h1',
+      [h3]: props.size === 'h3',
+      [h4]: props.size === 'h4',
+      [h5]: props.size === 'h5',
       [regular]: !props.bold,
       [bold]: props.bold,
       [italic]: props.italicised,
+      [caps]: props.uppercase,
       [textBlueDark]: !props.colour,
       [textBlue]: props.colour === 'blue',
       [textRed]: props.colour === 'red',

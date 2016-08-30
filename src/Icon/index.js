@@ -11,14 +11,18 @@ import {
   ArrowLeft, ArrowRight, Caduceus, Certificate, Chat,
   Clipboard, CreditCard, Cross, Download, Email, FlipCamera, Heart, History,
   Home, LogoStacked, Logout, Minus, Mute, Pathology, Phone, Plus, Prescription,
-  Profile, PromoCode, Settings, SignOut, Speaker, Tick, Unmute, VideoCall,
+  Profile, PromoCode, Settings, SignOut, Search, Speaker, Tick, Unmute, VideoCall,
 } from 'scrubs-icons'
+import { absolute, top0, bottom0, left0 } from 'traits/position.css'
+import { m2 } from 'traits/margin.css'
+import { p2 } from 'traits/padding.css'
+import { fillHeight } from 'traits/layout.css'
 
 type IconType =
  'arrowLeft' | 'arrowRight' | 'caduceus' | 'certificate'| 'chat' | 'clipboard' |
  'creditCard' | 'cross' | 'download' | 'email' | 'flipCamera' | 'heart' |
  'history' | 'home' | 'logoStacked' | 'logout' | 'minus' | 'mute' | 'pathology' |
- 'phone' | 'plus' | 'prescription' | 'profile' | 'promoCode' | 'settings' |
+ 'phone' | 'plus' | 'prescription' | 'profile' | 'promoCode' | 'search' | 'settings' |
  'signOut' | 'speaker' | 'tick' | 'unmute'  | 'videoCall'
 
 
@@ -26,7 +30,8 @@ type PropsType = {
   icon: IconType,
   fill?: 'blue' | 'red' | 'white' | 'grey' | 'greyDark' | 'green' | 'offWhite'
    | 'transparent',
-  size?: 'small' | 'medium' | 'large'
+  size?: 'small' | 'medium' | 'large',
+  positioned?: boolean,
 }
 
 /** Icons are SVG images with fill colours and sizes */
@@ -88,6 +93,8 @@ const renderIcon = (props: PropsType) => {
     return <PromoCode className={iconClasses(props)} />
   case 'settings':
     return <Settings className={iconClasses(props)} />
+  case 'search':
+    return <Search className={iconClasses(props)} />
   case 'signOut':
     return <SignOut className={iconClasses(props)} />
   case 'speaker':
@@ -106,7 +113,7 @@ const renderIcon = (props: PropsType) => {
 const iconClasses = (props: PropsType): string => {
   return classnames(
     {
-      [iconSmall]: !props.size || props.size === 'small',
+      [iconSmall]: props.size === 'small',
       [iconMedium]: props.size === 'medium',
       [iconLarge]: props.size === 'large',
       [fillBlue]: !props.fill,
@@ -118,6 +125,13 @@ const iconClasses = (props: PropsType): string => {
       [fillGreen]: props.fill === 'green',
       [fillOffWhite]: props.fill === 'offWhite',
       [fillTransparent]: props.fill === 'transparent',
+      [m2]: !props.positioned,
+      [absolute]: props.positioned,
+      [top0]: props.positioned,
+      [bottom0]: props.positioned,
+      [left0]: props.positioned,
+      [fillHeight]: props.positioned,
+      [p2]: props.positioned,
     }
   )
 }

@@ -2,11 +2,11 @@
 
 import React from 'react'
 import classnames from 'classnames'
-import { border, rounded } from 'traits/borders.css'
-import { textBlueDark, bgGrey, textBlueOnFocus, borderBlueOnFocus, borderGrey, borderRed } from 'traits/colours.css'
-import { h2, regular, sans, antialiased } from 'traits/typography.css'
+import { borderSmall, rounded, circle } from 'traits/borders.css'
+import { textBlueDark, bgGrey, textGreyDark, textGrey, textBlueOnFocus, borderBlueOnFocus, borderGrey, borderRed } from 'traits/colours.css'
+import { h5, regular, sans, antialiased } from 'traits/typography.css'
 import { fillWidth } from 'traits/layout.css'
-import { p2 } from 'traits/padding.css'
+import { py2, pl4 } from 'traits/padding.css'
 import { mb1 } from 'traits/margin.css'
 
 type Value = string
@@ -15,32 +15,39 @@ type PropsType = {
   onChange: (e: Event) => void,
   value: Value,
   placeholder: string,
-  valid: boolean
+  valid: boolean,
+  textColour?: 'greyDark' | 'grey',
+  inputType?: string,
+  pill?: boolean,
 }
 
 /** Default form input styles and handlers */
 
 const Input = (props: PropsType): React.Element<any> => {
-  const { placeholder, value, onChange } = props
+  const { placeholder, value, onChange, inputType } = props
   return (
     <input
       className={inputClasses(props)}
       placeholder={placeholder}
       value={value}
       onChange={onChange}
+      type={inputType}
     />
   )
 }
 
-  // const className = valid ? styles.InputNormal : styles.InputError
-
 const inputClasses = (props: PropsType): string => {
   return classnames(
-    border, rounded, textBlueDark, bgGrey, textBlueOnFocus, borderBlueOnFocus,
-    h2, regular, sans, antialiased, fillWidth, p2, mb1,
+    borderSmall, bgGrey, textBlueOnFocus, borderBlueOnFocus,
+    h5, regular, sans, antialiased, fillWidth, pl4, py2, mb1,
     {
+      [textBlueDark]: !props.textColour,
+      [textGreyDark]: props.textColour === 'greyDark',
+      [textGrey]: props.textColour === 'grey',
       [borderGrey]: props.valid,
       [borderRed]: !props.valid,
+      [rounded]: !props.pill,
+      [circle]: props.pill,
     }
   )
 }

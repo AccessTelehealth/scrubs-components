@@ -7,14 +7,14 @@ import { bgCover, bgCenter, imageSmall, imageMedium } from 'traits/images.css'
 import { pt100 } from 'traits/padding.css'
 
 type PropsType = {
-  url: string,
+  backgroundImageURL: string,
   size?: 'small' | 'fill',
 }
 
 /** Avatars for user images */
 
 const Avatar = (props: PropsType): React.Element<any> => {
-  const backgroundImage = `url(${props.url})`
+  const backgroundImage = `url(${props.backgroundImageURL})`
   return (
     <div className={avatarClasses(props)} style={{backgroundImage: backgroundImage}} />
   )

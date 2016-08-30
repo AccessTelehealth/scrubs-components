@@ -7,7 +7,7 @@ import * as components from './components'
 import Home from './Home'
 import { lowerCaseToCamelCase } from 'scrubs-libs'
 import {
-  View, Section, Page, Text, Item, List, Topbar, Title, Heading,
+  View, Section, Page, Text, Paragraph, Item, List, Topbar, Title, Heading,
 } from '../src/'
 
 class Wrapper extends React.Component {
@@ -18,7 +18,7 @@ class Wrapper extends React.Component {
     const { Example, documentation } = activeComponent
     return (
       <View>
-        <Topbar>
+        <Topbar backgroundColour='grey'>
           <Title>{lowerCaseActive}</Title>
         </Topbar>
         <Page>
@@ -28,7 +28,7 @@ class Wrapper extends React.Component {
           </Section>
           <Section>
             <Heading>Description</Heading>
-            <Text>{documentation.description}</Text>
+            <Paragraph>{documentation.description}</Paragraph>
           </Section>
           <Section>
             <Heading>Props</Heading>
@@ -47,12 +47,12 @@ const renderProps = (props: Object): Array<React.Element<any>> => {
     const prop = props[key]
     return (
       <Item key={index}>
-        <Text size='small' colour='blue' bold>{key}</Text>
+        <Text size='h5' colour='blue' bold>{key}</Text>
         <div>
-          <Text size='small' >required:</Text> <Text size='small' bold>{prop.required ? 'true' : 'false'}</Text>
+          <Text size='h5' >required:</Text> <Text size='h5' bold>{prop.required ? 'true' : 'false'}</Text>
         </div>
         <div>
-          <Text size='small' >type:</Text> <Text size='small' bold>{prop.flowType && prop.flowType.name}</Text>
+          <Text size='h5' >type:</Text> <Text size='h5' bold>{prop.flowType && prop.flowType.name}</Text>
         </div>
       </Item>
     )
