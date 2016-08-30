@@ -12,10 +12,10 @@ const Example = (): React.Element<*> => {
         <IconBackground backgroundColour='blueOpaque' icon='plus' size='large'/>
       </Grid>
       <Grid cols={4} align="middle" textAlign='center'>
-        <IconBackground backgroundColour='blueOpaque' icon='plus' size='large'/>
+        <IconBackground backgroundColour='greyDark' fill='white' icon='heart' size='large'/>
       </Grid>
       <Grid cols={4} align="middle" textAlign='right'>
-        <IconBackground backgroundColour='blueOpaque' icon='plus' size='large'/>
+        <IconBackground backgroundColour='blueOpaque' icon='chat' size='large'/>
       </Grid>
     </Row>
   )

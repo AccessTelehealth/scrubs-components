@@ -7,7 +7,7 @@ import {
   bgBlueDark, bgGrey, bgRed, bgGreen, bgWhite, bgBlue, borderBlue, borderRed,
   borderBlueDark, borderWhite, borderGreen, bgTransparent, borderGrey, borderGreyDark,
 } from 'traits/colours.css'
-import { rounded, borderSmall, borderLarge } from 'traits/borders.css'
+import { circle, borderSmall, borderLarge } from 'traits/borders.css'
 import { px3, px4, py1, py2 } from 'traits/padding.css'
 import { mt3 } from 'traits/margin.css'
 import { inlineBlock } from 'traits/layout.css'
@@ -36,7 +36,7 @@ const Button = (props: PropsType) : React.Element<any> => {
 
 const ButtonClasses = (props: PropsType): string => {
   return classnames(
-    rounded, caps, inlineBlock, bold, letterSpacing,
+    circle, caps, inlineBlock, bold, letterSpacing,
     {
       [px4]: props.padding === 'large',
       [py2]: props.padding === 'large',

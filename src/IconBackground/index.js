@@ -8,7 +8,7 @@ import { circle } from 'traits/borders.css'
 import { inlineBlock } from 'traits/layout.css'
 import { lineHeight0 } from 'traits/typography.css'
 import {
-  bgBlueDark, bgGrey, bgRed, bgGreen, bgWhite, bgBlue, bgBlueOpaque,
+  bgBlueDark, bgGrey, bgRed, bgGreyDark, bgGreen, bgWhite, bgBlue, bgBlueOpaque,
 } from 'traits/colours.css'
 
 type PropsType = {
@@ -34,6 +34,7 @@ const iconBackgroundClasses = (props: PropsType): string => {
       [bgGrey]: !props.backgroundColour,
       [bgBlueOpaque]: props.backgroundColour === 'blueOpaque',
       [bgBlueDark]: props.backgroundColour === 'blueDark',
+      [bgGreyDark]: props.backgroundColour === 'greyDark',
       [bgWhite]: props.backgroundColour === 'white',
       [bgGreen]: props.backgroundColour === 'green',
       [bgRed]: props.backgroundColour === 'red',
