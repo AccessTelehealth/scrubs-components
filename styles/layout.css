@@ -1,0 +1,81 @@
+.alignBaseline {
+  vertical-align: baseline;
+}
+
+.alignTop {
+  vertical-align: top;
+}
+
+.alignMiddle {
+  vertical-align: middle;
+}
+
+.alignBottom {
+  vertical-align: bottom;
+}
+
+.inline {
+  display: inline;
+}
+
+.block {
+  display: block;
+}
+
+.inlineBlock {
+  display: inline-block;
+}
+
+.table {
+  display: table;
+}
+
+.tableCell {
+  display: table-cell;
+}
+
+.overflowHidden {
+  overflow: hidden;
+}
+
+.overflowScroll {
+  overflow: scroll;
+}
+
+.overflowAuto {
+  overflow: auto;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.fit {
+  max-width: 100%;
+}
+
+.fillHeight {
+  height: 100%;
+}
+
+.fillWidth {
+  width: 100%;
+}
+
+.borderBox {
+  box-sizing: border-box;
+}

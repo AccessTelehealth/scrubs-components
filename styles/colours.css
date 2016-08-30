@@ -1,0 +1,152 @@
+@value blue: #3197EF;
+@value blueDark: #4272A0;
+@value grey: #EFEFF2;
+@value greyDark: #80A0BF;
+@value red: #FF556E;
+@value green: #31EFB5;
+@value offWhite: #F7F7F7;
+@value white: #FFFFFF;
+
+.textBlue {
+  color: blue;
+}
+
+.textBlueDark {
+  color: blueDark;
+}
+
+.textGrey {
+  color: grey;
+}
+
+.textGreyDark {
+  color: greyDark;
+}
+
+.textRed {
+  color: red;
+}
+
+.textGreen {
+  color: green;
+}
+
+.textOffWhite {
+  color: offWhite;
+}
+
+.textWhite {
+  color: white;
+}
+
+.textTransparent {
+  color: transparent;
+}
+
+.fillBlue {
+  fill: blue;
+}
+
+.fillBlueDark {
+  fill: blueDark;
+}
+
+.fillGrey {
+  fill: grey;
+}
+
+.fillGreyDark {
+  fill: greyDark;
+}
+
+.fillRed {
+  fill: red;
+}
+
+.fillGreen {
+  fill: green;
+}
+
+.fillOffWhite {
+  fill: offWhite;
+}
+
+.fillWhite {
+  fill: white;
+}
+
+.fillTransparent {
+  fill: transparent;
+}
+
+.bgBlue {
+  background-color: blue;
+}
+
+.bgBlueDark {
+  background-color: blueDark;
+}
+
+.bgGrey {
+  background-color: grey;
+}
+
+.bgGreyDark {
+  background-color: greyDark;
+}
+
+.bgRed {
+  background-color: red;
+}
+
+.bgGreen {
+  background-color: green;
+}
+
+.bgOffWhite {
+  background-color: offWhite;
+}
+
+.bgWhite {
+  background-color: white;
+}
+
+.bgTransparent {
+  background-color: transparent;
+}
+
+.borderBlue {
+  border-color: blue;
+}
+
+.borderBlueDark {
+  border-color: blueDark;
+}
+
+.borderGrey {
+  border-color: grey;
+}
+
+.borderGreyDark {
+  border-color: greyDark;
+}
+
+.borderRed {
+  border-color: red;
+}
+
+.borderGreen {
+  border-color: green;
+}
+
+.borderOffWhite {
+  border-color: offWhite;
+}
+
+.borderWhite {
+  border-color: white;
+}
+
+.borderTransparent {
+  border-color: transparent;
+}

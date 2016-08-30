@@ -4,10 +4,10 @@ var webpack = require('webpack')
 module.exports = {
   devtool: 'cheap-module-eval-source-map',
   entry: [
-    path.join(__dirname, 'docs')
+    path.join(__dirname, 'demo')
   ],
   output: {
-    path: path.join(__dirname, 'docs'),
+    path: path.join(__dirname, 'demo'),
     filename: 'bundle.js'
   },
   module: {
@@ -47,6 +47,6 @@ module.exports = {
     new webpack.NoErrorsPlugin(),
   ],
   devServer: {
-    contentBase: 'docs/'
+    contentBase: 'demo/'
   }
 }

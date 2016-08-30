@@ -1,0 +1,155 @@
+@value h1: 2.167rem;
+@value h2: 1.5rem;
+@value h3: 1.333rem;
+@value h4: 1.167rem;
+@value h5: 1rem;
+@value lineHeight1: 1;
+@value lineHeight2: 1.25;
+@value lineHeight3: 1.5;
+@value lineHeight4: 2;
+@value lineHeight5: 2.5;
+@value fontFamily: 'Source Sans Pro', sans-serif;
+@value normalFontWeight: 500;
+@value boldFontWeight: 600;
+@value letterSpacing: 0.08em;
+
+@font-face {
+  font-family: fontFamily;
+  src: url('../fonts/SourceSansPro-Regular.woff');
+  font-weight: regular;
+  font-weight: normalFontWeight;
+}
+
+@font-face {
+  font-family: fontFamily;
+  src: url('../fonts/SourceSansPro-RegularIt.woff');
+  font-weight: regular;
+  font-weight: normalFontWeight;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: fontFamily;
+  src: url('../fonts/SourceSansPro-Semibold.woff');
+  font-weight: bold;
+  font-weight: boldFontWeight;
+}
+
+@font-face {
+  font-family: fontFamily;
+  src: url('../fonts/SourceSansPro-SemiboldIt.woff');
+  font-weight: bold;
+  font-weight: boldFontWeight;
+  font-style: italic;
+}
+
+.h1 {
+  font-size: h1;
+}
+
+.h2 {
+  font-size: h2;
+}
+
+.h3 {
+  font-size: h3;
+}
+
+.h4 {
+  font-size: h4;
+}
+
+.h5 {
+  font-size: h5;
+}
+
+.sans {
+  font-family: fontFamily;
+}
+
+.fontFamilyInherit {
+  font-family: inherit;
+}
+
+.fontSizeInherit {
+  font-size: inherit;
+}
+
+.spaced {
+  letter-spacing: letterSpacing;
+}
+
+.textDecorationNone {
+  text-decoration: none;
+}
+
+.bold {
+  font-weight: boldFontWeight;
+}
+
+.regular {
+  font-weight: normal;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
+.leftAlign {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.rightAlign {
+  text-align: right;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.lineHeight1 {
+  line-height: lineHeight1;
+}
+
+.lineHeight2 {
+  line-height: lineHeight2;
+}
+
+.lineHeight3 {
+  line-height: lineHeight3;
+}
+
+.lineHeight4 {
+  line-height: lineHeight4;
+}
+
+.lineHeight5 {
+  line-height: lineHeight5;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+}
+
+.truncate {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

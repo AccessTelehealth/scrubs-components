@@ -1,0 +1,51 @@
+import classNames from 'classnames'
+import styles from './margins.css'
+
+export default ({
+    margin, marginTop, marginBottom, marginLeft, marginRight, marginX, marginY
+  }) => {
+  return classNames({
+    [styles.m0]: margin === 0,
+    [styles.m1]: margin === 1,
+    [styles.m2]: margin === 2,
+    [styles.m3]: margin === 3,
+    [styles.m4]: margin === 4,
+    [styles.mt0]: marginTop === 0,
+    [styles.mt1]: marginTop === 1,
+    [styles.mt2]: marginTop === 2,
+    [styles.mt3]: marginTop === 3,
+    [styles.mt4]: marginTop === 4,
+    [styles.mb0]: marginBottom === 0,
+    [styles.mb1]: marginBottom === 1,
+    [styles.mb2]: marginBottom === 2,
+    [styles.mb3]: marginBottom === 3,
+    [styles.mb4]: marginBottom === 4,
+    [styles.ml0]: marginLeft === 0,
+    [styles.ml1]: marginLeft === 1,
+    [styles.ml2]: marginLeft === 2,
+    [styles.ml3]: marginLeft === 3,
+    [styles.ml4]: marginLeft === 4,
+    [styles.mr0]: marginRight === 0,
+    [styles.mr1]: marginRight === 1,
+    [styles.mr2]: marginRight === 2,
+    [styles.mr3]: marginRight === 3,
+    [styles.mr4]: marginRight === 4,
+    [styles.mx0]: marginX === 0,
+    [styles.mx1]: marginX === 1,
+    [styles.mx2]: marginX === 2,
+    [styles.mx3]: marginX === 3,
+    [styles.mx4]: marginX === 4,
+    [styles.my0]: marginY === 0,
+    [styles.my1]: marginY === 1,
+    [styles.my2]: marginY === 2,
+    [styles.my3]: marginY === 3,
+    [styles.my4]: marginY === 4,
+    [styles.mxn1]: marginX === -1,
+    [styles.mxn2]: marginX === -2,
+    [styles.mxn3]: marginX === -3,
+    [styles.mxn4]: marginX === -4,
+    [styles.mlAuto]: marginLeft === 'auto',
+    [styles.mrAuto]: marginRight === 'auto',
+    [styles.mxAuto]: marginX === 'auto',
+  })
+}

@@ -42,6 +42,7 @@
     "scrubs-traits": "github:dr-me/scrubs-traits",
     "style-loader": "^0.13.1",
     "svgo-loader": "^1.1.0",
+    "understyle": "^1.2.0",
     "url-loader": "^0.5.7",
     "webpack": "^1.13.1",
     "webpack-combine-loaders": "^2.0.0",

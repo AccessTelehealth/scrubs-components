@@ -1,0 +1,169 @@
+@value space1: 4px;
+@value space2: 8px;
+@value space3: 16px;
+@value space4: 32px;
+
+.p0 {
+  padding: 0;
+}
+
+.pt0 {
+  padding-top: 0;
+}
+
+.pr0 {
+  padding-right: 0;
+}
+
+.pb0 {
+  padding-bottom: 0;
+}
+
+.pl0 {
+  padding-left: 0;
+}
+
+.px0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.py0 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.p1 {
+  padding: space1;
+}
+
+.pt1 {
+  padding-top: space1;
+}
+
+.pr1 {
+  padding-right: space1;
+}
+
+.pb1 {
+  padding-bottom: space1;
+}
+
+.pl1 {
+  padding-left: space1;
+}
+
+.px1 {
+  padding-left: space1;
+  padding-right: space1;
+}
+
+.py1 {
+  padding-top: space1;
+  padding-bottom: space1;
+}
+
+.p2 {
+  padding: space2;
+}
+
+.pt2 {
+  padding-top: space2;
+}
+
+.pr2 {
+  padding-right: space2;
+}
+
+.pb2 {
+  padding-bottom: space2;
+}
+
+.pl2 {
+  padding-left: space2;
+}
+
+.px2 {
+  padding-left: space2;
+  padding-right: space2;
+}
+
+.py2 {
+  padding-top: space2;
+  padding-bottom: space2;
+}
+
+.p3 {
+  padding: space3;
+}
+
+.pt3 {
+  padding-top: space3;
+}
+
+.pr3 {
+  padding-right: space3;
+}
+
+.pb3 {
+  padding-bottom: space3;
+}
+
+.pl3 {
+  padding-left: space3;
+}
+
+.px3 {
+  padding-left: space3;
+  padding-right: space3;
+}
+
+.py3 {
+  padding-top: space3;
+  padding-bottom: space3;
+}
+
+.pxn1 {
+  padding-left: -space1;
+  padding-right: -space1;
+}
+
+.pxn2 {
+  padding-left: -space2;
+  padding-right: -space2;
+}
+
+.pxn3 {
+  padding-left: -space3;
+  padding-right: -space3;
+}
+
+.p4 {
+  padding: space4;
+}
+
+.pt4 {
+  padding-top: space4;
+}
+
+.pr4 {
+  padding-right: space4;
+}
+
+.pb4 {
+  padding-bottom: space4;
+}
+
+.pl4 {
+  padding-left: space4;
+}
+
+.px4 {
+  padding-left: space4;
+  padding-right: space4;
+}
+
+.py4 {
+  padding-top: space4;
+  padding-bottom: space4;
+}

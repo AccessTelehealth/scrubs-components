@@ -1,0 +1,111 @@
+@value borderSmallWidth: 1px;
+@value borderMediumWidth: 2px;
+@value borderLargeWidth: 3px;
+@value borderRadius: 5px;
+
+.borderSmall {
+  border-style: solid;
+  border-width: borderSmallWidth;
+}
+
+.borderTopSmall {
+  border-top-style: solid;
+  border-top-width: borderSmallWidth;
+}
+
+.borderRightSmall {
+  border-right-style: solid;
+  border-right-width: borderSmallWidth;
+}
+
+.borderBottomSmall {
+  border-bottom-style: solid;
+  border-bottom-width: borderSmallWidth;
+}
+
+.borderLeftSmall {
+  border-left-style: solid;
+  border-left-width: borderSmallWidth;
+}
+
+.borderMedium {
+  border-style: solid;
+  border-width: borderMediumWidth;
+}
+
+.borderTopMedium {
+  border-top-style: solid;
+  border-top-width: borderMediumWidth;
+}
+
+.borderRightMedium {
+  border-right-style: solid;
+  border-right-width: borderMediumWidth;
+}
+
+.borderBottomMedium {
+  border-bottom-style: solid;
+  border-bottom-width: borderMediumWidth;
+}
+
+.borderLeftMedium {
+  border-left-style: solid;
+  border-left-width: borderMediumWidth;
+}
+
+.borderLarge {
+  border-style: solid;
+  border-width: borderLargeWidth;
+}
+
+.borderTopLarge {
+  border-top-style: solid;
+  border-top-width: borderLargeWidth;
+}
+
+.borderRightLarge {
+  border-right-style: solid;
+  border-right-width: borderLargeWidth;
+}
+
+.borderBottomLarge {
+  border-bottom-style: solid;
+  border-bottom-width: borderLargeWidth;
+}
+
+.borderLeftLarge {
+  border-left-style: solid;
+  border-left-width: borderLargeWidth;
+}
+
+.borderNone {
+  border: 0;
+}
+
+.rounded {
+  border-radius: borderRadius;
+}
+
+.circle {
+  border-radius: 9999px;
+}
+
+.roundedTop {
+  border-radius: borderRadius borderRadius 0 0;
+}
+
+.roundedRight {
+  border-radius: 0 borderRadius borderRadius 0;
+}
+
+.roundedBottom {
+  border-radius: 0 0 borderRadius borderRadius;
+}
+
+.roundedLeft {
+  border-radius: borderRadius 0 0 borderRadius;
+}
+
+.notRounded {
+  border-radius: 0;
+}
