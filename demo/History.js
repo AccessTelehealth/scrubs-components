@@ -16,9 +16,9 @@ const History = () => {
           <Base float='left' position='absolute' borderRadius='rounded' backgroundSize='contain'
             style={{width: '5rem', height: '5rem'}} backgroundImage={patientImage} />
           <Section float='left' width='fill' style={{paddingLeft: '6rem'}}>
-            <Section>
+            <Section clearfix marginBottom={2}>
               <Grid size={3/4}>
-                <Text fontWeight='bold' marginBottom={2}>
+                <Text fontWeight='bold'>
                   Roger McBride
                 </Text>
               </Grid>

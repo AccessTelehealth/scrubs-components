@@ -15,7 +15,7 @@ const Home = ({ offline, patientQueue }) => {
         </LargeButton>
       </Section>
       <Section position='absolute' textAlign='center' width='fill' style={{top: '50%'}} paddingX={4}>
-        <Text textWhite fontSize={1} lineHeight={2} marginBottom={4}>
+        <Text textColour='white' fontSize={1} lineHeight={2} marginBottom={4}>
           Home message
         </Text>
         {patientWaiting && (
