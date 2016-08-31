@@ -4,8 +4,8 @@ import Base from './Base'
 const Button = ({ ...props }) => {
   return (
     <Base
-      tagName='button' inlineBlock sans antialiased
-      uppercase bold spaced fontSize={3} {...props}
+      tagName='button' display='inlineBlock' sans antialiased
+      uppercase fontWeight='bold' spaced fontSize={3} {...props}
     />
   )
 }
