@@ -4,7 +4,7 @@ import Base from './Base'
 const Button = ({ ...props }) => {
   return (
     <Base
-      tagName='button' inlineBlock sourceSansPro antialiased
+      tagName='button' inlineBlock sans antialiased
       uppercase bold spaced fontSize={3} {...props}
     />
   )
