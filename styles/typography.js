@@ -4,7 +4,8 @@ import styles from './typography.css'
 export default ({
     fontSize, lineHeight, fontSizeInherit, sans, fontFamilyInherit,
     textDecorationNone, bold, regular, italic, uppercase, spaced, leftAlign,
-    centerAlign, rightAlign, justify, antialiased, truncate, underline,
+    centerAlign, rightAlign,
+    justify, antialiased, truncate, underline,
   }) => {
   return classNames({
     [styles.h1]: fontSize === 1,

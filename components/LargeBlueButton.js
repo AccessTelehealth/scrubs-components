@@ -4,7 +4,7 @@ import LargeButton from './LargeButton'
 const LargeBlueButton = (props) => {
   return (
     <LargeButton
-       borderBlue textWhite backgroundBlue
+       borderBlue textWhite bgBlue
        {...props}
     />
   )

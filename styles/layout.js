@@ -5,6 +5,7 @@ export default ({
   alignBaseline, alignTop, alignMiddle, alignBottom, inline, block,
   inlineBlock, table, tableCell, overflowHidden, overflowScroll, overflowAuto,
   clearfix, left, right, fit, fillWidth, fillHeight, borderBox,
+  absolute, relative, fixed,
   }) => {
   return classNames({
     [styles.alignBaseline]: alignBaseline,
@@ -26,5 +27,8 @@ export default ({
     [styles.fillWidth]: fillWidth,
     [styles.fillHeight]: fillHeight,
     [styles.borderBox]: borderBox,
+    [styles.absolute]: absolute,
+    [styles.relative]: relative,
+    [styles.fixed]: fixed,
   })
 }

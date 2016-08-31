@@ -14,6 +14,7 @@ const Base = (props: PropsType): React.Element<*> => {
     alignBaseline, alignTop, alignMiddle, alignBottom, inline, block,
     inlineBlock, table, tableCell, overflowHidden, overflowScroll, overflowAuto,
     clearfix, left, right, fit, fillWidth, fillHeight, borderBox,
+    absolute, relative, fixed,
     margin, marginTop, marginBottom, marginLeft, marginRight, marginX, marginY,
     padding, paddingTop, paddingBottom, paddingLeft, paddingRight, paddingX, paddingY,
     fontSize, lineHeight, fontSizeInherit, sans, fontFamilyInherit,
@@ -36,6 +37,7 @@ const Base = (props: PropsType): React.Element<*> => {
       alignBaseline, alignTop, alignMiddle, alignBottom, inline, block,
       inlineBlock, table, tableCell, overflowHidden, overflowScroll, overflowAuto,
       clearfix, left, right, fit, fillWidth, fillHeight, borderBox,
+      absolute, relative, fixed,
     }),
     margins({
       margin, marginTop, marginBottom, marginLeft, marginRight, marginX, marginY,
@@ -67,7 +69,7 @@ const Base = (props: PropsType): React.Element<*> => {
   const styles = {
     width: size && `${size * 100}%`,
     backgroundImage: backgroundImage && `url('${backgroundImage}')`,
-    ...styles,
+    ...style,
   }
   return (
     <Component className={className} style={styles} {...componentProps} />

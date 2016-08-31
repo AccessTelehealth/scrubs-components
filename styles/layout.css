@@ -79,3 +79,15 @@
 .borderBox {
   box-sizing: border-box;
 }
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.fixed {
+  position: fixed;
+}
