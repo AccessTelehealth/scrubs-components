@@ -2,13 +2,13 @@ import classNames from 'classnames'
 import styles from './layout.css'
 
 export default ({
-  align, display, overflow, clearfix, float, width, height, borderBox, position
+  verticalAlign, display, overflow, clearfix, float, width, height, borderBox, position
   }) => {
   return classNames({
-    [styles.alignBaseline]: align === 'baseline',
-    [styles.alignTop]: align === 'top',
-    [styles.alignMiddle]: align === 'middle',
-    [styles.alignBottom]: align === 'bottom',
+    [styles.alignBaseline]: verticalAlign === 'baseline',
+    [styles.alignTop]: verticalAlign === 'top',
+    [styles.alignMiddle]: verticalAlign === 'middle',
+    [styles.alignBottom]: verticalAlign === 'bottom',
     [styles.inline]: display === 'inline',
     [styles.block]: display === 'block',
     [styles.inlineBlock]: display === 'inlineBlock',

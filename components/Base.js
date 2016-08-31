@@ -12,7 +12,7 @@ const Base = (props: PropsType): React.Element<*> => {
   const {
     component, tagName, size, style, backgroundImage,
 
-    align, display, overflow, clearfix, float, width, height, borderBox, position,
+    verticalAlign, display, overflow, clearfix, float, width, height, borderBox, position,
 
     margin, marginTop, marginBottom, marginLeft, marginRight, marginX, marginY,
 
@@ -32,7 +32,7 @@ const Base = (props: PropsType): React.Element<*> => {
   const Component = component || tagName || 'div'
   const className = classNames(
     layout({
-      align, display, overflow, clearfix, float, width, height, borderBox, position,
+      verticalAlign, display, overflow, clearfix, float, width, height, borderBox, position,
     }),
     margins({
       margin, marginTop, marginBottom, marginLeft, marginRight, marginX, marginY,
