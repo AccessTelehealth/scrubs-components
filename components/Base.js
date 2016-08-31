@@ -11,24 +11,32 @@ import borders from '../styles/borders'
 const Base = (props: PropsType): React.Element<*> => {
   const {
     component, tagName, size, style, backgroundImage,
+
     alignBaseline, alignTop, alignMiddle, alignBottom, inline, block,
     inlineBlock, table, tableCell, overflowHidden, overflowScroll, overflowAuto,
     clearfix, left, right, fit, fillWidth, fillHeight, borderBox,
     absolute, relative, fixed,
+
     margin, marginTop, marginBottom, marginLeft, marginRight, marginX, marginY,
+
     padding, paddingTop, paddingBottom, paddingLeft, paddingRight, paddingX, paddingY,
+
     fontSize, lineHeight, fontSizeInherit, sans, fontFamilyInherit,
     textDecorationNone, bold, regular, italic, uppercase, spaced,
     leftAlign, centerAlign, rightAlign, justify, antialiased, truncate, underline,
-    textBlue, textBlueDark, textGrey, textGreyDark, textRed, textGreen,
-    textOffWhite, textWhite, textTransparent, fillBlue, fillBlueDark, fillGrey,
+
+    textBlue, textBlueDark, textGreyBlue, textGrey, textGreyDark, textRed, textGreen,
+    textOffWhite, textWhite, textTransparent, fillBlue, fillBlueDark, fillGreyBlue, fillGrey,
     fillGreyDark, fillRed, fillGreen, fillOffWhite, fillWhite, fillTransparent,
-    bgBlue, bgBlueDark, bgGrey, bgGreyDark, bgRed, bgGreen, bgOffWhite, bgWhite,
-    bgTransparent, borderBlue, borderBlueDark, borderGrey, borderGreyDark,
+    bgBlue, bgBlueDark, bgGreyBlue, bgGrey, bgGreyDark, bgRed, bgGreen, bgOffWhite, bgWhite,
+    bgTransparent, borderBlue, borderBlueDark, borderGreyBlue, borderGrey, borderGreyDark,
     borderRed, borderGreen, borderOffWhite, borderWhite, borderTransparent,
+
     cover, contain,
+
     border, borderTop, borderBottom, borderLeft, borderRight,
     rounded, roundedTop, roundedBottom, roundedLeft, roundedRight, circle,
+
     ...componentProps,
   } = props
   const Component = component || tagName || 'div'
@@ -51,12 +59,12 @@ const Base = (props: PropsType): React.Element<*> => {
       leftAlign, centerAlign, rightAlign, justify, antialiased, truncate, underline,
     }),
     colours({
-      textBlue, textBlueDark, textGrey, textGreyDark, textRed, textGreen,
-      textOffWhite, textWhite, textTransparent, fillBlue, fillBlueDark, fillGrey,
+      textBlue, textBlueDark, textGreyBlue, textGrey, textGreyDark, textRed, textGreen,
+      textOffWhite, textWhite, textTransparent, fillBlue, fillBlueDark, fillGreyBlue, fillGrey,
       fillGreyDark, fillRed, fillGreen, fillOffWhite, fillWhite, fillTransparent,
-      bgBlue, bgBlueDark, bgGrey, bgGreyDark, bgRed, bgGreen, bgOffWhite, bgWhite,
-      bgTransparent, borderBlue, borderBlueDark, borderGrey, borderGreyDark,
-      borderRed, borderGreen, borderOffWhite, borderWhite, borderTransparent,
+      bgBlue, bgBlueDark, bgGreyBlue, bgGrey, bgGreyDark, bgRed, bgGreen, bgOffWhite, bgWhite,
+      bgTransparent, borderBlue, borderBlueDark, borderGreyBlue, borderGrey, borderGreyDark,
+      borderRed, borderGreen, borderOffWhite, borderWhite, borderTransparent
     }),
     images({
       cover, contain,

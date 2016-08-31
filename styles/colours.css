@@ -1,5 +1,6 @@
 @value blue: #3197EF;
 @value blueDark: #4272A0;
+@value greyBlue: #62778A;
 @value grey: #EFEFF2;
 @value greyDark: #80A0BF;
 @value red: #FF556E;
@@ -13,6 +14,10 @@
 
 .textBlueDark {
   color: blueDark;
+}
+
+.textGreyBlue {
+  color: greyBlue;
 }
 
 .textGrey {
@@ -51,6 +56,10 @@
   fill: blueDark;
 }
 
+.fillGreyBlue {
+  fill: greyBlue;
+}
+
 .fillGrey {
   fill: grey;
 }
@@ -87,6 +96,10 @@
   background-color: blueDark;
 }
 
+.bgGreyBlue {
+  background-color: greyBlue;
+}
+
 .bgGrey {
   background-color: grey;
 }
@@ -121,6 +134,10 @@
 
 .borderBlueDark {
   border-color: blueDark;
+}
+
+.borderGreyBlue {
+  border-color: greyBlue;
 }
 
 .borderGrey {

@@ -2,17 +2,19 @@ import classNames from 'classnames'
 import styles from './colours.css'
 
 export default ({
-  textBlue, textBlueDark, textGrey, textGreyDark, textRed, textGreen,
-  textOffWhite, textWhite, textTransparent, fillBlue, fillBlueDark, fillGrey,
+  textBlue, textBlueDark, textGreyBlue, textGrey, textGreyDark, textRed, textGreen,
+  textOffWhite, textWhite, textTransparent, fillBlue, fillBlueDark, fillGreyBlue, fillGrey,
   fillGreyDark, fillRed, fillGreen, fillOffWhite, fillWhite, fillTransparent,
-  bgBlue, bgBlueDark, bgGrey, bgGreyDark, bgRed, bgGreen, bgOffWhite, bgWhite,
-  bgTransparent, borderBlue, borderBlueDark, borderGrey, borderGreyDark,
+  bgBlue, bgBlueDark, bgGreyBlue, bgGrey, bgGreyDark, bgRed, bgGreen, bgOffWhite, bgWhite,
+  bgTransparent, borderBlue, borderBlueDark, borderGreyBlue, borderGrey, borderGreyDark,
   borderRed, borderGreen, borderOffWhite, borderWhite, borderTransparent
   }) => {
   return classNames({
     [styles.textBlue]: textBlue,
     [styles.textBlueDark]: textBlueDark,
+    [styles.textGreyBlue]: textGreyBlue,
     [styles.textGrey]: textGrey,
+    [styles.textGreyDark]: textGreyDark,
     [styles.textGreyDark]: textGreyDark,
     [styles.textRed]: textRed,
     [styles.textGreen]: textGreen,
@@ -21,6 +23,7 @@ export default ({
     [styles.textTransparent]: textTransparent,
     [styles.fillBlue]: fillBlue,
     [styles.fillBlueDark]: fillBlueDark,
+    [styles.fillGreyBlue]: fillGreyBlue,
     [styles.fillGrey]: fillGrey,
     [styles.fillGreyDark]: fillGreyDark,
     [styles.fillRed]: fillRed,
@@ -30,6 +33,7 @@ export default ({
     [styles.fillTransparent]: fillTransparent,
     [styles.bgBlue]: bgBlue,
     [styles.bgBlueDark]: bgBlueDark,
+    [styles.bgGreyBlue]: bgGreyBlue,
     [styles.bgGrey]: bgGrey,
     [styles.bgGreyDark]: bgGreyDark,
     [styles.bgRed]: bgRed,
@@ -39,6 +43,7 @@ export default ({
     [styles.bgTransparent]: bgTransparent,
     [styles.borderBlue]: borderBlue,
     [styles.borderBlueDark]: borderBlueDark,
+    [styles.borderGreyBlue]: borderGreyBlue,
     [styles.borderGrey]: borderGrey,
     [styles.borderGreyDark]: borderGreyDark,
     [styles.borderRed]: borderRed,
