@@ -69,7 +69,6 @@ type BasePropsType = {
   component: React.Element,
   style: StyleType,
   tagName: 'input' | 'button' | 'p' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5',
-
   size: number,
 
   display: 'inline' | 'block'| 'inlineBlock'| 'table'| 'tableCell',
