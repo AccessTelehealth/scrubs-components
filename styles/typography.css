@@ -3,6 +3,7 @@
 @value h3: 1.333rem;
 @value h4: 1.2rem;
 @value h5: 1rem;
+@value lineHeight0: 0;
 @value lineHeight1: 1;
 @value lineHeight2: 1.25;
 @value lineHeight3: 1.5;
@@ -117,6 +118,10 @@
 
 .nowrap {
   white-space: nowrap;
+}
+
+.lineHeight0 {
+  line-height: lineHeight0;
 }
 
 .lineHeight1 {

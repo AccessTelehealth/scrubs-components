@@ -13,6 +13,7 @@ export default ({
     [styles.h4]: fontSize === 4,
     [styles.h5]: fontSize === 5,
     [styles.fontSizeInherit]: fontSizeInherit,
+    [styles.lineHeight0]: lineHeight === 0,
     [styles.lineHeight1]: lineHeight === 1,
     [styles.lineHeight2]: lineHeight === 2,
     [styles.lineHeight3]: lineHeight === 3,
