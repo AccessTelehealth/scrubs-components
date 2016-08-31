@@ -6,7 +6,7 @@ const Input = (props) => {
     <Base
       tagName='input' textBlueDark borderGrey border={1}
       padding={2} sans rounded fontSize={3} fillWidth
-      antialiased lineHeight={3} backgroundGrey {...props}
+      antialiased lineHeight={3} bgGrey {...props}
     />
   )
 }
