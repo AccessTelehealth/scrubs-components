@@ -12,40 +12,27 @@ const Base = (props: PropsType): React.Element<*> => {
   const {
     component, tagName, size, style, backgroundImage,
 
-    alignBaseline, alignTop, alignMiddle, alignBottom, inline, block,
-    inlineBlock, table, tableCell, overflowHidden, overflowScroll, overflowAuto,
-    clearfix, left, right, fit, fillWidth, fillHeight, borderBox,
-    absolute, relative, fixed,
+    align, display, overflow, clearfix, float, width, height, borderBox, position,
 
     margin, marginTop, marginBottom, marginLeft, marginRight, marginX, marginY,
 
     padding, paddingTop, paddingBottom, paddingLeft, paddingRight, paddingX, paddingY,
 
-    fontSize, lineHeight, fontSizeInherit, sans, fontFamilyInherit,
-    textDecorationNone, bold, regular, italic, uppercase, spaced,
-    leftAlign, centerAlign, rightAlign, justify, antialiased, truncate, underline,
+    fontSize, lineHeight, fontFamily, fontWeight, textAlign, italic, uppercase,
+    spaced, antialiased, truncate, underline,
 
-    textBlue, textBlueDark, textGreyBlue, textGrey, textGreyDark, textRed, textGreen,
-    textOffWhite, textWhite, textTransparent, fillBlue, fillBlueDark, fillGreyBlue, fillGrey,
-    fillGreyDark, fillRed, fillGreen, fillOffWhite, fillWhite, fillTransparent,
-    bgBlue, bgBlueDark, bgGreyBlue, bgGrey, bgGreyDark, bgRed, bgGreen, bgOffWhite, bgWhite,
-    bgTransparent, borderBlue, borderBlueDark, borderGreyBlue, borderGrey, borderGreyDark,
-    borderRed, borderGreen, borderOffWhite, borderWhite, borderTransparent,
+    textColour, fillColour, backgroundColour, borderColour,
 
-    cover, contain,
+    backgroundSize,
 
-    border, borderTop, borderBottom, borderLeft, borderRight,
-    rounded, roundedTop, roundedBottom, roundedLeft, roundedRight, circle,
+    border, borderTop, borderBottom, borderLeft, borderRight, borderRadius,
 
     ...componentProps,
   } = props
   const Component = component || tagName || 'div'
   const className = classNames(
     layout({
-      alignBaseline, alignTop, alignMiddle, alignBottom, inline, block,
-      inlineBlock, table, tableCell, overflowHidden, overflowScroll, overflowAuto,
-      clearfix, left, right, fit, fillWidth, fillHeight, borderBox,
-      absolute, relative, fixed,
+      align, display, overflow, clearfix, float, width, height, borderBox, position,
     }),
     margins({
       margin, marginTop, marginBottom, marginLeft, marginRight, marginX, marginY,
@@ -54,24 +41,17 @@ const Base = (props: PropsType): React.Element<*> => {
       padding, paddingTop, paddingBottom, paddingLeft, paddingRight, paddingX, paddingY,
     }),
     typography({
-      fontSize, lineHeight, fontSizeInherit, sans, fontFamilyInherit,
-      textDecorationNone, bold, regular, italic, uppercase, spaced,
-      leftAlign, centerAlign, rightAlign, justify, antialiased, truncate, underline,
+      fontSize, lineHeight, fontFamily, fontWeight, textAlign, italic, uppercase,
+      spaced, antialiased, truncate, underline,
     }),
     colours({
-      textBlue, textBlueDark, textGreyBlue, textGrey, textGreyDark, textRed, textGreen,
-      textOffWhite, textWhite, textTransparent, fillBlue, fillBlueDark, fillGreyBlue, fillGrey,
-      fillGreyDark, fillRed, fillGreen, fillOffWhite, fillWhite, fillTransparent,
-      bgBlue, bgBlueDark, bgGreyBlue, bgGrey, bgGreyDark, bgRed, bgGreen, bgOffWhite, bgWhite,
-      bgTransparent, borderBlue, borderBlueDark, borderGreyBlue, borderGrey, borderGreyDark,
-      borderRed, borderGreen, borderOffWhite, borderWhite, borderTransparent
+      textColour, fillColour, backgroundColour, borderColour
     }),
     images({
-      cover, contain,
+      backgroundSize
     }),
     borders({
-      border, borderTop, borderBottom, borderLeft, borderRight,
-      rounded, roundedTop, roundedBottom, roundedLeft, roundedRight, circle,
+      border, borderTop, borderBottom, borderLeft, borderRight, borderRadius,
     }),
   )
   const styles = {

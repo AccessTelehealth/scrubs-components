@@ -80,10 +80,6 @@
   letter-spacing: letterSpacing;
 }
 
-.textDecorationNone {
-  text-decoration: none;
-}
-
 .bold {
   font-weight: boldFontWeight;
 }
@@ -114,10 +110,6 @@
 
 .justify {
   text-align: justify;
-}
-
-.nowrap {
-  white-space: nowrap;
 }
 
 .lineHeight0 {

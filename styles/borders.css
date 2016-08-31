@@ -89,23 +89,3 @@
 .circle {
   border-radius: 9999px;
 }
-
-.roundedTop {
-  border-radius: borderRadius borderRadius 0 0;
-}
-
-.roundedRight {
-  border-radius: 0 borderRadius borderRadius 0;
-}
-
-.roundedBottom {
-  border-radius: 0 0 borderRadius borderRadius;
-}
-
-.roundedLeft {
-  border-radius: borderRadius 0 0 borderRadius;
-}
-
-.notRounded {
-  border-radius: 0;
-}

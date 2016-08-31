@@ -2,10 +2,10 @@ import classNames from 'classnames'
 import styles from './images.css'
 
 export default ({
-    cover, contain,
+    backgroundSize,
   }) => {
   return classNames({
-    [styles.cover]: cover,
-    [styles.contain]: contain,
+    [styles.cover]: backgroundSize === 'cover',
+    [styles.contain]: backgroundSize === 'contain',
   })
 }

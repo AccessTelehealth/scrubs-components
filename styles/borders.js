@@ -2,8 +2,7 @@ import classNames from 'classnames'
 import styles from './borders.css'
 
 export default ({
-    border, borderTop, borderBottom, borderLeft, borderRight,
-    rounded, roundedTop, roundedBottom, roundedLeft, roundedRight, circle
+    border, borderTop, borderBottom, borderLeft, borderRight, borderRadius,
   }) => {
   return classNames({
     [styles.borderSmall]: border === 1,
@@ -22,11 +21,7 @@ export default ({
     [styles.borderLeftLarge]: borderLeft === 3,
     [styles.borderRightLarge]: borderRight === 3,
     [styles.borderNone]: border === 0,
-    [styles.rounded]: rounded,
-    [styles.circle]: circle,
-    [styles.roundedTop]: roundedTop,
-    [styles.roundedRight]: roundedRight,
-    [styles.roundedBottom]: roundedBottom,
-    [styles.roundedLeft]: roundedLeft,
+    [styles.rounded]: borderRadius === 'rounded',
+    [styles.circle]: borderRadius === 'circle' || borderRadius === 'pill',
   })
 }
