@@ -4,7 +4,7 @@ import Text from './Text'
 const TabLabel = ({ active, ...props }) => {
   return (
     <Text
-      bold fontSize={5} textAlign='center' textColour={active ? 'blue' : 'greyDark'}
+      bold fontSize={5} centerAlign textBlue={active} textGreyDark={!active}
       paddingY={3} {...props}
     />
   )

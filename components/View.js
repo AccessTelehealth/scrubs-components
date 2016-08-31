@@ -3,7 +3,7 @@ import Base from './Base'
 
 const View = (props) => {
   return (
-    <Base {...props} height='fill' />
+    <Base fillHeight {...props} />
   )
 }
 

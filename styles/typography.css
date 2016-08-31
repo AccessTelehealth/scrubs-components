@@ -95,7 +95,7 @@
   font-style: italic;
 }
 
-.caps {
+.uppercase {
   text-transform: uppercase;
 }
 
@@ -103,7 +103,7 @@
   text-align: left;
 }
 
-.center {
+.centerAlign {
   text-align: center;
 }
 
