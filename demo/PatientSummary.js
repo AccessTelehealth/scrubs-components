@@ -5,6 +5,7 @@ import Text from '../components/Text'
 import Page from '../components/Page'
 import SmallButton from '../components/SmallButton'
 import MediumButton from '../components/MediumButton'
+import TextArea from '../components/TextArea'
 import Input from '../components/Input'
 import Label from '../components/Label'
 import Field from '../components/Field'
@@ -42,7 +43,7 @@ const PatientSummary = () => {
           </Field>
           <Field>
             <Label>Notes</Label>
-            <Input placeholder="Further Notes"></Input>
+            <TextArea placeholder="Further Notes"></TextArea>
           </Field>
         </Section>
       </Page>
