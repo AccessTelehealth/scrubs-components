@@ -64,16 +64,20 @@
   float: right;
 }
 
-.fit {
+.fitWidth {
   max-width: 100%;
+}
+
+.fillWidth {
+  width: 100%;
 }
 
 .fillHeight {
   height: 100%;
 }
 
-.fillWidth {
-  width: 100%;
+.fitHeight {
+  max-height: 100%;
 }
 
 .borderBox {
