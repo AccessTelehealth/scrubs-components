@@ -3,7 +3,7 @@ import Base from './Base'
 
 const Grid = (props) => {
   return (
-    <Base display="inlineBlock" textAlign="middle" borderBox {...props} />
+    <Base display="inlineBlock" verticalAlign="middle" borderBox {...props} />
   )
 }
 
