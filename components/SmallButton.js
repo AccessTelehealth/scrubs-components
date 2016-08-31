@@ -4,7 +4,7 @@ import Button from './Button'
 const SmallButton = (props) => {
   return (
     <Button
-      fontSize={4} paddingX={3} paddingY={2} border={1} borderRadius='circle' lineHeight={3}
+      fontSize={5} paddingX={2} paddingY={1} border={1} borderRadius='circle' lineHeight={1}
       {...props}
     />
   )

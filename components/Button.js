@@ -5,7 +5,7 @@ const Button = ({ ...props }) => {
   return (
     <Base
       tagName='button' display='inlineBlock' fontFamily='sans' antialiased
-      uppercase fontWeight='bold' spaced fontSize={3} {...props}
+      fontWeight='bold' fontSize={3} borderRadius='circle' {...props}
     />
   )
 }

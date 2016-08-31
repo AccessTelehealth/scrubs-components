@@ -4,7 +4,8 @@ import defaults from '../styles/defaults.css'
 import Welcome from './Welcome'
 import Home from './Home'
 import History from './History'
+import PatientSummary from './PatientSummary'
 
-ReactDOM.render(<History />,
+ReactDOM.render(<PatientSummary />,
   document.getElementById('root')
 )
