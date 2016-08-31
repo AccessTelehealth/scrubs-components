@@ -10,8 +10,8 @@ import welcomeBackground from '../images/app-in-hand.png'
 
 const Welcome = () => {
   return (
-    <View cover backgroundImage={welcomeBackground}>
-      <Icon icon={LogoIcon} fillWhite size={1/3} marginTop={3} marginLeft={3} />
+    <View backgroundSize='cover' backgroundImage={welcomeBackground}>
+      <Icon icon={LogoIcon} fillColour='white' size={1/3} marginTop={3} marginLeft={3} />
       <Section absolute fillWidth style={{top: '45%'}} paddingX={4}>
         <Text textWhite centerAlign fontSize={1} lineHeight={2} marginBottom={2}>
           Get a live medical consultation on your phone
