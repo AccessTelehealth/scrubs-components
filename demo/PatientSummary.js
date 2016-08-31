@@ -23,13 +23,13 @@ const PatientSummary = () => {
       <Page>
         <Section marginBottom={4} marginTop={2} textAlign='center'>
           <Text textAlign='center' fontWeight='bold' fontSize={4} lineHeight={1} marginBottom={2}>
-            Patient Name
+            Tessa Violet
          </Text>
          <Text textAlign='center' fontSize={4} lineHeight={1} marginBottom={2}>
-           Patient Details
+           28, Female, Melbourne
         </Text>
-          <Text textAlign='center' fontSize={4} lineHeight={1} marginBottom={2}>
-            Patient Request
+          <Text textAlign='center' fontSize={4} lineHeight={2} marginBottom={2}>
+            Seeking prescription reissue
          </Text>
         <MediumButton textColour='white' borderColour='blue' backgroundColour='blue' fontSize={5}>
           Finish Consultation
