@@ -4,7 +4,7 @@ import Base from './Base'
 const Text = (props) => {
   return (
     <Base
-      sans textColour='blueDark' antialiased fontSize={4}
+      fontFamily='sans' textColour='greyBlue' antialiased fontSize={4}
       lineHeight={1} {...props}
     />
   )

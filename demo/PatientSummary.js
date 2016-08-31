@@ -4,6 +4,7 @@ import Section from '../components/Section'
 import Text from '../components/Text'
 import Page from '../components/Page'
 import SmallButton from '../components/SmallButton'
+import MediumButton from '../components/MediumButton'
 import Input from '../components/Input'
 import Label from '../components/Label'
 import Field from '../components/Field'
@@ -17,20 +18,22 @@ const PatientSummary = () => {
       <Section>
         <Tab size={1/3} borderRight={1}><TabLabel>Consultation</TabLabel></Tab>
         <Tab size={1/3} borderRight={1}><TabLabel>Patient History</TabLabel></Tab>
-        <Tab size={1/3}><TabLabel textBlue active>Summary</TabLabel></Tab>
+        <Tab size={1/3}><TabLabel textColour='blue' active>Summary</TabLabel></Tab>
       </Section>
       <Page>
-        <Section marginBottom={4} centerAlign>
-          <Text centerAlign bold fontSize={4} lineHeight={1} marginBottom={2}>
+        <Section marginBottom={4} marginTop={2} textAlign='center'>
+          <Text textAlign='center' fontWeight='bold' fontSize={4} lineHeight={1} marginBottom={2}>
             Patient Name
          </Text>
-         <Text centerAlign fontSize={4} lineHeight={1} marginBottom={2}>
+         <Text textAlign='center' fontSize={4} lineHeight={1} marginBottom={2}>
            Patient Details
         </Text>
-          <Text centerAlign fontSize={4} lineHeight={1} marginBottom={2}>
+          <Text textAlign='center' fontSize={4} lineHeight={1} marginBottom={2}>
             Patient Request
          </Text>
-        <SmallButton bgBlue textWhite borderBlue fontSize={5}>Finish Consultation</SmallButton>
+        <MediumButton textColour='white' borderColour='blue' backgroundColour='blue' fontSize={5}>
+          Finish Consultation
+        </MediumButton>
         </Section>
         <Section marginBottom={2}>
           <Field>
@@ -42,19 +45,38 @@ const PatientSummary = () => {
             <Input placeholder="Further Notes"></Input>
           </Field>
         </Section>
+      </Page>
         <Section>
-          <Label>Documents</Label>
-          <Section>
-            <Grid cols={3/4}><Text>Medical Certificate</Text></Grid>
-            <Grid cols={1/4} alignRight  ><SmallButton borderBlue textBlue paddingTop={1} fontSize={5}>Edit</SmallButton></Grid>
+          <Text paddingLeft={3} marginBottom={2} display='block' uppercase fontWeight='bold'
+          fontSize={5} textColour='greyDark'>Documents</Text>
+          <Section borderTop={1} borderColour='grey'>
+            <Section padding={3}>
+              <Grid size={3/4}>
+                <Text fontWeight='bold' lineHeight={3}>Medical Certificate</Text>
+                <Text lineHeight={3}>Date - date</Text>
+              </Grid>
+              <Grid size={1/4} align='top' textAlign='right'>
+                <SmallButton borderColour='blue' textColour='blue' paddingTop={1} fontSize={5}>
+                  Edit
+                </SmallButton>
+              </Grid>
+            </Section>
           </Section>
-          <Section>
-            <Grid></Grid>
-            <Grid></Grid>
+          <Section borderTop={1} borderColour='grey'>
+            <Section padding={3}>
+              <Grid size={3/4}>
+                <Text fontWeight='bold' lineHeight={3}>Medical Certificate</Text>
+                <Text lineHeight={3}>Date - date</Text>
+              </Grid>
+              <Grid size={1/4} align='top' textAlign='right'>
+                <SmallButton borderColour='blue' textColour='blue' paddingTop={1} fontSize={5}>
+                  Edit
+                </SmallButton>
+              </Grid>
+            </Section>
           </Section>
 
         </Section>
-      </Page>
     </View>
   )
 }
